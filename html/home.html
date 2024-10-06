@@ -21,19 +21,22 @@
                 <ul class="lista"> 
                     <!--==================== SERVICIOS ====================-->
                     <div class="primerMenu">
-                        <li><a href="#">Servicios</a>
+                        <li class="menuNav"><a href="#">Servicios</a>
 
                             <ul class="segundoMenu">
+                                <!--==================== espacio vacio ====================-->
+                                <li class="espacioVacio"><a href="#"> </a>
+                                    <li class="espacioVacio"><a href="#"> </a>
                                 <!--==================== peluqueria ====================-->
-                                <li><a href="#">Peluqueria</a>
-                                    <ul class="tercerMenu">
+                                <li><a href="#">Peluqueria </a>
+                                    <ul class="tercerMenu" id="peluqueria">
                                         <li><a href="#">Peinados</a></li>
                                         <li><a href="#">Tratamientos capilares</a></li>
                                     </ul>
                                 </li>
                                 <!--==================== tratamientos faciales ====================-->
                                 <li><a href="#">Tratamientos faciales</a>
-                                    <ul class="tercerMenu">
+                                    <ul class="tercerMenu" id="tratamientosFaciales">
                                         <li><a href="#">Limpiezas faciales</a></li>
                                         <li><a href="#">Antienvejecimiento</a></li>
                                         <li><a href="#">Hidratación facial</a></li>
@@ -42,7 +45,7 @@
                                 </li>
                                 <!--==================== depilación ====================-->
                                 <li><a href="#">Depilación</a>
-                                    <ul class="tercerMenu">
+                                    <ul class="tercerMenu" id="depilación">
                                         <li><a href="#">Depilación con hilo</a></li>
                                         <li><a href="#">Depilación con cera</a></li>
                                     </ul>
@@ -55,12 +58,15 @@
 
                     <!--==================== PRODUCTOS ====================-->
                     <div class="primerMenu">
-                        <li><a href="#">Productos</a>
+                        <li class="menuNav" id="productos"><a href="#">Productos</a>
 
                             <ul class="segundoMenu">
+                                <!--==================== espacio vacio ====================-->
+                                <li class="espacioVacio"><a href="#"> </a>
+                                    <li class="espacioVacio"><a href="#"> </a>
                                 <!--==================== Faciales ====================-->
                                 <li><a href="#">Faciales</a>
-                                    <ul class="tercerMenuProductos">
+                                    <ul class="tercerMenuProductos" id="productosFaciales">
                                         <li><a href="#">Maquillaje</a></li>
                                         <li><a href="#">Crema facial</a></li>
                                         <li><a href="#">Protector Solar</a></li>
@@ -71,7 +77,7 @@
                                 </li>
                                 <!--==================== Capilares ====================-->
                                 <li><a href="#">Capilares</a>
-                                    <ul class="tercerMenuProductos">
+                                    <ul class="tercerMenuProductos" id="productosCapilares">
                                         <li><a href="#">Shampoo</a></li>
                                         <li><a href="#">Acondicionador</a></li>
                                         <li><a href="#">Mascarilla</a></li>
@@ -85,12 +91,17 @@
                     <!--========================================-->
 
                     <!--==================== AUTOCUIDADO ====================-->
+                    
                     <div class="primerMenu">
-                        <li><a href="#">Autocuidado</a>
+                        <li class="menuNav" id="autocuidado"><a href="#">Autocuidado</a>
 
                             <ul class="segundoMenu">
-                                <li><a href="#">Facial</a></li>
+                                 <!--==================== espacio vacio ====================-->
+                                 <li class="espacioVacio"><a href="#"> </a>
+                                    <li class="espacioVacio"><a href="#"> </a>
 
+                                <!--==================== sub menus ====================-->
+                                <li><a href="#">Facial</a></li>
                                 <li><a href="#">Capilar</a></li>
                             </ul>
                         </li>
@@ -99,27 +110,30 @@
 
                     <!--==================== RESEÑAS ====================-->
                     <div class="primerMenu">
-                        <li><a href="#">Reseñas</a>
+                        <li class="menuNav" id="reseñas"><a href="#">Reseñas</a>
 
                             <ul class="segundoMenu">
-                                <li><a href="#">Servicios</a></li>
+                                <!--==================== espacio vacio ====================-->
+                                <li class="espacioVacio"><a href="#"> </a>
+                                    <li class="espacioVacio"><a href="#"> </a>
 
+                                <!--==================== sub menus ====================-->
+                                <li><a href="#">Servicios</a></li>
                                 <li><a href="#">Productos</a></li>
                             </ul>
                         </li>
                     </div>
-                    <!--========================================-->
-
-                   
-                    <div class="cuenta">
-                        <img src="../assets/image/conejo.png" class="conejoCuenta" alt="imagen conejo">
-                        
-                        <p><a href="./login.html " target="_blank">Iniciar sesión</a></p>
-                        <p class="miCuenta">mi cuenta</p>
-                        <p><a href="./registro.html" target="_blank">/ Registrarse</a></p>
-                        
-                    </div>
-                </ul>
+                     <!--==================== AGENDAR CITA ====================-->
+                   <div id="agendaCita">
+                    <a href="#">Agenda tu cita</a>
+                   </div>
+                </ul>   
+                </div>
+                <div class="cuenta">
+                    <img src="../assets/image/conejo.png" class="conejoCuenta" alt="imagen conejo">
+                    <p><a href="./login.html " target="_blank">Iniciar sesión</a></p>
+                    <p class="miCuenta">mi cuenta</p>
+                    <p><a href="./registro.html" target="_blank">/ Registrarse</a></p>
             </div>
         </nav>
     </header>

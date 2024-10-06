@@ -6,55 +6,73 @@
 
 /*Fondo pagina inicio*/
 body {
-    background-image: url(../assets/image/fondo\ .png) ;
-    background-position: center;
+    background-image: url(../assets/image/fondo.jpeg) ;
+    background-position-y: 20%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 /*navegacion*/
 
-
+header{
+    position: sticky;
+    top: 0px;
+}
 
 .logo{
-width: 150px;
+width: 100px;
+
+
 }
 
 .conejoCuenta{
-    width: 150px;
-    float: left;
-}
-
-nav{
-    position: fixed
-}
-
-
-header{
-    margin: auto;
+    width: 190px;
+    margin-top: -18%;
+    margin-left:  12%;
+    margin-right: -25%;
+    padding-right: -50%;
+    
     
 }
+
+
+.lista{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    margin-top: -3.8%;
+    
+    
+
+}
+
+.menuNav > a {
+    font-size: 145%;
+
+}
+
 
 ul{
     list-style: none;
 }
 
 
-.lista li a {
-    background-color: rgba(253, 237, 235, 255);
-    text-decoration: none;
+.lista li {
+    
     padding: 10px 15px;
     display: block;
 
 }
 
 .lista li a:hover {
-    background-color: rgba(253, 237, 235, 255) ;
+    background-color: white; 
 
 }
 .primerMenu{
     float: left;
+    padding-right: -10%;
+    margin-left: 4%;
+    
 }
 
 .lista li ul {
@@ -68,59 +86,117 @@ ul{
 
 }
 
+.espacioVacio{
+    background-color: #fdedec;
+}
+
 .segundoMenu {
     position: relative;
+    background-color:  white;
+    margin-top: 0.2%;
+    
 }
 
 .tercerMenu{
-    right: -155px;
+    margin-left: 174px;
     top: 0px;
-
+    background-color:  white;
+    
 }
 
 .tercerMenuProductos{
-    right: -140px;
+    margin-left: 130px;
     top: 0px;
+    background-color:  white;
 
 }
 
 .contenedorLista {
     margin-left: 10%;
-    padding-left: 10%;
-    margin-top: -5%;
+    
+    margin-top: -3%;
 }
 
 
 .cuenta{
    display: flex;
-   margin-left: 75%;
+   margin-left: 83%;
+   margin-top: -3.8%;
+   
+   
    
 }
 
-p{
+p {
+
+    text-align: left;
     margin-top: 5%;
-    margin-left: 0.7%;
-    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 95%;
+     
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 640;
 }
 
 .miCuenta{
     position: absolute;
-    margin-left: 11%;
-    margin-top: 3%;
+    margin-left: 9.5%;
+    margin-top: 1.8%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 120%;
+    font-weight: 400;   
+    color: #fa8999; 
+}
+
+#tratamientosFaciales{
+    margin-top: 50%;
+}
+
+#depilación{
+    margin-top: 75%;
+}
+
+#capilares{
+    margin-top: 33%;
+}
+
+
+#peluqueria {
+    margin-top: 22%;
+}
+
+#productosCapilares {
+    margin-top: 65%;
+}
+
+#productosFaciales{
+    margin-top: 28%;
+
+}
+
+#productos{
+    margin-left: 50%;
+}
+
+#autocuidado{
+    margin-left: 70%;
+}
+
+#reseñas{
+    margin-left: 140%;
+}
+
+#agendaCita{
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 0.5%;
+    font-size: 143%;
     
 }
-    
-    
-
-
-
-
-
-
-
-
-
-
 
 
 
