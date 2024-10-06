@@ -273,12 +273,22 @@ position: fixed;       para que se quede dijo asi se haga scroling, para moverlo
 position: absolute;      se posiciona el elemento en base a otro elemento, para esto debeje esta dentro del contenedor del elemento que vamos
 a tomar como referencia y ese elemento debe tener position relative, para moverlo se usa top lieft, bottom right
 
------------------------------FLOAT
 
 
 
+------------------------------------------------------------------------FLEXBOX
+-------DISPLAY
+display: inline-flex;      ------se alinean en horizontalmente
+display: flex           ----------se alinean
 
+------DIRECCION
+flex-direction: row;       ---horizontalmente
+flex-direction: row-reverse;          ---horizontal se invierte el orden
 
+flex-direction: column;          ---------como columna
+ flex-direction: column-reverse;        ---------como columna se invierte el orden
+
+ flex-wrap: nowwrap;         -----muestra todos los elementos en una misma linea
 
 
 
