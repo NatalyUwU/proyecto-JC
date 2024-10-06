@@ -1,4 +1,4 @@
-/* 
+/*
 etiqueta header en html: La etiqueta <header> en HTML se utiliza para definir la cabecera de una página web, generalmente contiene información introductoria, logotipos, menús de navegación, o títulos relevantes.
 etiqueta span html:Es ideal cuando necesitas aplicar estilos o scripts a una porción específica del contenido dentro de un bloque de texto sin interrumpir el flujo de la página
 
@@ -28,7 +28,7 @@ Utiliza unidades de medida responsivas como %, vw (viewport width), y vh (viewpo
 Ejemplo:
 .container {
     width: 90%; /* Usa un porcentaje para que sea responsivo */
-   // max-width: 1368px; /* Máximo ancho para pantallas grandes */
+// max-width: 1368px; /* Máximo ancho para pantallas grandes */
 //}
 
 /*
@@ -81,7 +81,7 @@ git log                 para ver el commit
 
 
 
-//-------------------------          
+//-------------------------
 //----------------------------             <link rel="stylesheet" href="../css/slider.css"></head>
 
 
@@ -101,7 +101,7 @@ git log                 para ver el commit
 */
 
 //------------------------------------------Listas ordenadas
-               
+
 /*<ol type="A">
                                     <li><a href="#">Maquillaje</a></li>
                                     <li><a href="#">Crema facial</a></li>
@@ -235,7 +235,7 @@ p id="parrafoBase" class="parrafoBase">
         -------------------------------UN CONTENEDOR Y LOS ELEMENTOS QUE CUMPLAN CON LOS REQUISITOS SE LE APLICA
 
         
------------CSS Texto
+-------------------------------------------------CSS Texto  -- FONT
 opacity: 0.5;      -opacidad
  font-size: ;       ---- tamaño
     text-align: ;      --- alineacion texto
@@ -250,10 +250,30 @@ opacity: 0.5;      -opacidad
      width: 150px; ----alto y ancho
      height: ; -----------largo
 
+     text-aling: cente;        alinear texto
+
+---------------------------------------CSS
+border-radius: 0px;           esquinas redondeadas
+border: 0px solid;              borde con color
+
+heigth: auto;         cambiar tamaño por ancho y largo automaticamente
 
 
+----------------------------CSS DISPLAY
+ display: block;     los elementos ocupan el 100% del ancho, quedando asi una vista como bloques uno debajo del otro
+ display: inline-block          elementos en linea uno al lado del otro
+display: flex              elementos en linea uno al lado del otro
 
 
+------------------------------CSS POSISIONES
+position: relative;         para que el elemento permazeca en un determinado lugar, para moverlo se usa top lieft, bottom right
+
+position: fixed;       para que se quede dijo asi se haga scroling, para moverlo se usa top lieft, bottom right
+
+position: absolute;      se posiciona el elemento en base a otro elemento, para esto debeje esta dentro del contenedor del elemento que vamos
+a tomar como referencia y ese elemento debe tener position relative, para moverlo se usa top lieft, bottom right
+
+-----------------------------FLOAT
 
 
 
