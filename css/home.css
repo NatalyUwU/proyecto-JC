@@ -1,7 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Fondo pagina inicio*/
 body {
     background-image: url(../assets/image/fondo\ .png) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+/*navegacion*/
+
+
+
+.logo{
+width: 150px;
+}
+
+.conejoCuenta{
+    width: 150px;
+    float: left;
+}
+
+nav{
+    position: fixed
+}
+
+
+header{
+    margin: auto;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+.lista li a {
+    background-color: rgba(253, 237, 235, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+
+}
+
+.lista li a:hover {
+    background-color: rgba(253, 237, 235, 255) ;
+
+}
+.primerMenu{
+    float: left;
+}
+
+.lista li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.lista li:hover > ul {
+    display: block;
+
+}
+
+.segundoMenu {
+    position: relative;
+}
+
+.tercerMenu{
+    right: -155px;
+    top: 0px;
+
+}
+
+.tercerMenuProductos{
+    right: -140px;
+    top: 0px;
+
+}
+
+.contenedorLista {
+    margin-left: 10%;
+    padding-left: 10%;
+    margin-top: -5%;
+}
+
+
+.cuenta{
+   display: flex;
+   margin-left: 75%;
+   
+}
+
+p{
+    margin-top: 5%;
+    margin-left: 0.7%;
+    
+}
+
+.miCuenta{
+    position: absolute;
+    margin-left: 11%;
+    margin-top: 3%;
+    
+}
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.itemCarrusel{
+    border: 1px solid pink;
+}
+
+.tarjetaCarrusel{
+    background-color: beige;
+}
+
+.flechasCarrusel{
+    background-color: palevioletred;
 }

@@ -235,6 +235,21 @@ p id="parrafoBase" class="parrafoBase">
         -------------------------------UN CONTENEDOR Y LOS ELEMENTOS QUE CUMPLAN CON LOS REQUISITOS SE LE APLICA
 
         
+-----------CSS Texto
+opacity: 0.5;      -opacidad
+ font-size: ;       ---- tamaño
+    text-align: ;      --- alineacion texto
+    font-family: ; ----------fuente
+    font-style: ;        ----arrecostada
+    font-weight: ;      ------grosor
+    font-variant: small-caps;     ----pasar a minuscula
+     vertical-align: ;         ------- varios textos verticales
+
+
+     ----------imagenes
+     width: 150px; ----alto y ancho
+     height: ; -----------largo
+
 
 
 
