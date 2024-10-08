@@ -305,6 +305,7 @@ a{
 }
 
 .tarjetaCarrusel{
+    position: absolute;
     border: 0px solid black;
     height: 100%;
     width: 100%;
@@ -331,4 +332,17 @@ a{
     height: 850px;
     margin-top: -5%;
     margin-left: -1%;
+    position: relative;
+    z-index: -2;
+}
+
+.textoCarrusel{
+    position: absolute;
+    margin-top: -30%;
+   
+}
+
+.tituloCarrusel{
+    position: absolute;
+    margin-top: -30%;
 }
