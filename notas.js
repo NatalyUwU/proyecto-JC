@@ -273,6 +273,8 @@ position: fixed;       para que se quede dijo asi se haga scroling, para moverlo
 position: absolute;      se posiciona el elemento en base a otro elemento, para esto debeje esta dentro del contenedor del elemento que vamos
 a tomar como referencia y ese elemento debe tener position relative, para moverlo se usa top lieft, bottom right
 
+overflow: hidden;          ocultar un elemento
+
 
 
 

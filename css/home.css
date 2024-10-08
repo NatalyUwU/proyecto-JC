@@ -69,11 +69,12 @@ width: 100px;
 
 .espacioVacio{
     background-color: #fdedec;
-    margin-top: -4.3%;
+    margin-top: -4%;
 }
 
-#primerEspacioVacio{
-    margin-top: -0.5%;
+.espacioVacio1{
+    background-color: #fdedec;
+    margin-top: -6%;
 }
 
 .segundoMenu {
@@ -130,11 +131,11 @@ a{
 }
 
 #tratamientosFaciales{
-    margin-top: 48%;
+    margin-top: 41%;
 }
 
 #depilación{
-    margin-top: 68%;
+    margin-top: 61%;
 }
 
 #capilares{
@@ -142,15 +143,15 @@ a{
 }
 
 #peluqueria {
-    margin-top: 23%;  
+    margin-top: 20%;  
 }
 
 #productosCapilares {
-    margin-top: 65%;
+    margin-top: 55%;
 }
 
 #productosFaciales{
-    margin-top: 29%;
+    margin-top: 24%;
 }
 
 
@@ -280,20 +281,54 @@ a{
 }
 
 
+/* SOBRE LA EMPRESA */
 
-
-
-
-
+#contenedorCarrusel{
+    border: 0px solid blue;
+    margin-top: 7%;
+    padding-top: 2%;
+    height: 830px;
+    overflow: hidden;
+    position: relative;
+   
+    
+}
 
 .itemCarrusel{
-    border: 1px solid pink;
+   
+    border: 0px solid red;
+    height: 830px;
+    position: relative;
+    padding-top: 80px;
+    
+   
 }
 
 .tarjetaCarrusel{
-    background-color: beige;
+    border: 0px solid black;
+    height: 100%;
+    width: 100%;
+    margin-left: 7%;
+    
+    
+   
+    
 }
 
 .flechasCarrusel{
-    background-color: palevioletred;
+    position: absolute;
+    top: 83%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 41.5%;
+    overflow: visible;
+    
+}
+
+.fondoCarrusel{
+    height: 850px;
+    margin-top: -5%;
+    margin-left: -1%;
 }
