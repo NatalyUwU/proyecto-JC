@@ -17,13 +17,73 @@ body {
 /*navegacion*/
 
 header{
+    background-color: #fdf0ee;
     position: sticky;
-    top: 17px;
-    z-index: 1; 
+    top: 0%;
+    height: 7rem;
+    width: 100%;
 }
 
-
 .logo{
-width: 100px;
+width: 6rem;
+margin-top: 14%;
+}
 
+.conejoCuenta{
+    width: 5rem;
+    height: 5.5rem;
+    margin-top: 1%;
+    margin-right: -9%;
+    margin-left: 4.2%;
+    
+}
+
+.banner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.anguloAbajo{
+    width: 1rem;
+}
+
+ul{
+    padding-left: 2.2%;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
+    color: black; 
+    font-weight: 500; 
+}
+
+.lista ul:hover > ul  {
+    display: block;
+
+}
+
+.lista ul {
+    display: none;
+}
+
+.cuenta{
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
+    align-self: center;
+    margin-left: -10%;
+    margin-top: 3.5%;
+    font-size: 1rem;
+}
+
+.iniciarSesion{
+    padding-right: 0%;
+    padding-left: 8.8%;
+    margin-right: -1.5%;
 }

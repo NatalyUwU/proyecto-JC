@@ -280,7 +280,6 @@ overflow: hidden;          ocultar un elemento
 
 -------------------------------------------------------------------FLEXBOX
 -------DISPLAY
-display: inline-flex;      ------se alinean en horizontalmente
 display: flex           ----------se alinean
 
 ----------------------------------------------------------------------justify-content        cuando es una columna, justify-content cambia a vertical y align-items a horizontal.
@@ -360,7 +359,7 @@ flex-flow:column wrap;
 }
 
 ----------------------------------------------------------------------align-content
-ara establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:
+Para establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:
 
 flex-start: Las líneas se posicionan en la parte superior del contenedor.
 flex-end: Las líneas se posicionan en la parte inferior del contenedor.
