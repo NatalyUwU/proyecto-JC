@@ -1,9 +1,10 @@
+/*Configuracion universal*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Se realiza todo el css de la pagina de inicio*/
 body {
     background-image: url(../image/fondoIniciarSesion.png);
     background-position: center;
@@ -22,54 +23,11 @@ h1 {
     position: relative;
 }
 
-/*
-.elementoForm{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #fcd4d6;
-    border-radius: 10rem;
-    margin-top: 2.5%;
-    margin-left: 13%;
-    padding-left: 3rem;
-    width: 75%;
-    font-size: 1.3rem;
-    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
-    font-weight: 300rem;
-    flex-wrap: wrap;
-    
-}
-
-.inputForm{
-    display: flex;
-    border: 0rem;
-    background-color: #fcd4d6;
-    margin-top: 1%;
-    margin-left: 0.8%;
-    font-size: large;
-    width: 68%;
-    flex-wrap: wrap;
-}
-
-
-.botontxt{
-   position: absolute;
-    margin: 15rem 15rem 0rem 15rem;
-    width: 8%;
-    background-color: #fff9f5;
-    border: 0rem;
-    z-index: 2;
-}
-
-
-*/
 form {
     display: grid;
-    grid-template-columns: 32% 25% 30% 8% 1%;
+    grid-template-columns: 32% 25% 25% 8% 1%;
     grid-template-rows: 25% 10% 25% 114% 20%;
-    margin-left: 11%;
-
-
+    margin-left: 10%;
 
 }
 
@@ -79,9 +37,8 @@ form {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    padding-left: 4%;
+    padding-left: 3%;
     padding-top: 1%;
-    
     font-size: 140%;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300rem;
@@ -98,7 +55,7 @@ form {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    padding-left: 4%;
+    padding-left: 3%;
     padding-top: 1%;
     font-size: 140%;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -115,10 +72,6 @@ form {
 }
 
 .botontxt {
-    /*
-    display: flex;
-    grid-area: 5/ 2 / 6 / 3;
-    */
     background-color: transparent;
     border: 0rem;
     font-family: "Alice", serif;
@@ -126,7 +79,6 @@ form {
     font-weight: 800;
     position: absolute;
     top: 89vh;
-    padding-top: 1%;
     padding-left: 1.5rem;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -135,6 +87,7 @@ form {
 .inputForm {
     border: 0rem;
     background-color: transparent;
-    margin-left: 0.8%;
-    font-size: 70%;
+    font-size: 65%;
+    margin-left: 0.5%;
+    height:  70%; 
 }

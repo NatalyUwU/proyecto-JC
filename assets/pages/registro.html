@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCOCOQUETTE</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
-        <h1>CREA UNA CUENTA EN ROCOCOQUETTE</h1>
-        </main>
+        <h1>CREA UNA CUENTA EN <br> ROCOCOQUETTE</h1>
+    </main>
+
+    <form>
+        <div class="nombres">
+            <label for="nombre">Nombres:</label>
+            <input type="text" name="nombre" class="inputRegistro"  placeholder="Ingresa tus nombres aqui" required><br><br>
+        </div>
+        <div class="apellidos">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" class="inputRegistro" placeholder="Ingresa tus apellidos aqui" required><br><br>
+        </div>
+        <div class="correo">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" name="correo" class="inputRegistro" placeholder="Ingresa tu correo aqui" required><br><br>
+        </div>
+        <div class="contraseña">
+            <label for="contra">Contraseña:</label>
+            <input type="password" name="contra" class="inputRegistro" placeholder="Ingresa tu contraseña aqui" required><br><br>
+        </div>
+        <div class="genero">
+            <label>Género:&nbsp;&nbsp;</label>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" class="inputRegistro"  value="masculino" id="masculino">
+
+            <label for="femenino">&nbsp;&nbsp;Femenino</label>
+            <input type="radio" name="genero" class="inputRegistro"  value="femenino" id="femenino">
+
+            <label for="otro">&nbsp;&nbsp;Otro</label>
+            <input type="radio" name="genero" class="inputRegistro"  value="otro" id="otro"><br><br>
+        </div>
+
         
-            <form>
-                <label for="nombre">Nombres:</label>
-                <input type="text" name="nombre" placeholder="Ingresa tus nombres aqui" required><br><br>
+    </form>
 
-                 <label for="apellidos">Apellidos:</label>
-                <input type="text" name="apellidos" placeholder="Ingresa tus apellidos aqui" required><br><br>
+    <input type="submit" class="boton" value="CREAR">
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" name="correo" placeholder="Ingresa tu correo aqui" required><br><br>
 
-                <label for="contra">Contraseña:</label>
-                <input type="password" name="contra" placeholder="Ingresa tu contraseña aqui" required><br><br>
 
-                <label>Género:</label>
 
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero" value="masculino" id="masculino">
-
-                <label for="femenino">Femenino</label>
-                <input type="radio" name="genero" value="femenino" id="femenino">
-
-                <label for="otro">Otro</label>
-                <input type="radio" name="genero" value="otro" id="otro"><br><br>
-
-                <input type="submit">
-            </form>
-            
-        
-
-       
-        
-    
 </body>
+
 </html>
