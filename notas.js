@@ -371,10 +371,16 @@ stretch: Las líneas se estiran para ajustarse al contenedor.
 align-content determina el espacio entre las líneas,
 mientras que align-items determina como los elementos en su conjunto están alineados dentro del contenedor. Cuando hay solo una línea, align-content no tiene efecto.
 
-*/
 
 
+------------------------------------------------------------------------------GRID
 
+ grid-column: 2 / 4;  primer valor para grid-column-start y segundo valor para grid-column-end
+
+ grid-row: 2 / 4;     primer valor para  grid-row-start y segundo valor para grid-row-end
+
+
+ grid-area: 1 / 1 / 3 / 6;.   grid-row-start, grid-column-start, grid-row-end, seguido de grid-column-end.
 
 
 

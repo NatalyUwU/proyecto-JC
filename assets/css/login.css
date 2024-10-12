@@ -1,7 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url(../assets/image/fondo\ .png) ;
+    background-image: url(../image/fondoIniciarSesion.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: center;
+    font-family: "Alice", serif;
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+/*
+.elementoForm{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fcd4d6;
+    border-radius: 10rem;
+    margin-top: 2.5%;
+    margin-left: 13%;
+    padding-left: 3rem;
+    width: 75%;
+    font-size: 1.3rem;
+    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 300rem;
+    flex-wrap: wrap;
+    
+}
+
+.inputForm{
+    display: flex;
+    border: 0rem;
+    background-color: #fcd4d6;
+    margin-top: 1%;
+    margin-left: 0.8%;
+    font-size: large;
+    width: 68%;
+    flex-wrap: wrap;
+}
+
+
+.botontxt{
+   position: absolute;
+    margin: 15rem 15rem 0rem 15rem;
+    width: 8%;
+    background-color: #fff9f5;
+    border: 0rem;
+    z-index: 2;
+}
+
+
+*/
+form {
+    display: grid;
+    grid-template-columns: 32% 25% 30% 8% 1%;
+    grid-template-rows: 25% 10% 25% 114% 20%;
+    margin-left: 11%;
+
+
+
+}
+
+.elementoForm1 {
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: #fcd4d6;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding-left: 4%;
+    padding-top: 1%;
+    
+    font-size: 140%;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300rem;
+    border-radius: 10rem;
+    flex-wrap: wrap;
+
+
+
+}
+
+.elementoForm2 {
+    grid-area: 3/ 1 / 4 / 5;
+    background-color: #fcd4d6;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding-left: 4%;
+    padding-top: 1%;
+    font-size: 140%;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300rem;
+    border-radius: 10rem;
+    flex-wrap: wrap;
+
+}
+
+.liston {
+    grid-area: 3/ 4 / 4 / 4;
+    width: 160%;
+    margin-top: 1rem;
+}
+
+.botontxt {
+    /*
+    display: flex;
+    grid-area: 5/ 2 / 6 / 3;
+    */
+    background-color: transparent;
+    border: 0rem;
+    font-family: "Alice", serif;
+    font-size: 150%;
+    font-weight: 800;
+    position: absolute;
+    top: 89vh;
+    padding-top: 1%;
+    padding-left: 1.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inputForm {
+    border: 0rem;
+    background-color: transparent;
+    margin-left: 0.8%;
+    font-size: 70%;
 }

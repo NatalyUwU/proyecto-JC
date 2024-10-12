@@ -5,23 +5,20 @@
 }
 
 /*Fondo pagina inicio*/
-body {
-    background-image: url(../assets/image/fondo.jpeg) ;
-    background-position-y: 20%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
-}
+
 
 /*navegacion*/
+.sectionHeader{
+display: flex;
+justify-content: space-around;
 
+}
 header{
     background-color: #fdf0ee;
     position: sticky;
     top: 0%;
     height: 7rem;
-    width: 100%;
+   
 }
 
 .logo{
@@ -33,16 +30,35 @@ margin-top: 14%;
     width: 5rem;
     height: 5.5rem;
     margin-top: 1%;
-    margin-right: -9%;
     margin-left: 4.2%;
     
 }
 
+.login{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
 .banner{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    gap: 6rem;
+    
+
+}
+.lista-Banner{
+    min-width: 5rem;
+}
+
+
+.separador{
+   
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 2.3rem;
+    padding-left: 0.8rem;
 }
 
 .anguloAbajo{
@@ -50,7 +66,7 @@ margin-top: 14%;
 }
 
 ul{
-    padding-left: 2.2%;
+   
     text-decoration: none;
     list-style-type: none;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
