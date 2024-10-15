@@ -326,6 +326,9 @@ ej:
 order: 2;
 }
 
+
+el menor va a quedar a la izquierda y el mayor a la derecha, todos los elementos valen 0 al principio
+
 ----------------------------------------------------------------------align-self
 Esta propiedad acepta los mismos valores de align-items y sus valores son usados para un elemento específico
 
@@ -385,9 +388,27 @@ mientras que align-items determina como los elementos en su conjunto están alin
 
 
 
+------------------------------MEDIA QUERIS
+@media (max-width: 480){
+   #class {
+  backround-color: red;:
+  }
+  p {
 
+   }
+   .dasdsa{
 
+    }
+}
 
+@media (max-width: 480px) ans (max-width: 1200px){
+   #class {
+  copiar y pegar el codigo css original y ahi empezar a modificarlo
+  }
+    }
+
+-----------------RELACIONAR CSS
+@import url ("link del archivo");
 
 
 
