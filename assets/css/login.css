@@ -45,9 +45,6 @@ form {
     font-weight: 300rem;
     border-radius: 10rem;
     flex-wrap: wrap;
-
-
-
 }
 
 .elementoForm2 {
@@ -117,7 +114,7 @@ form {
     }
 
     label {
-        font-size: 80%;
+        font-size: 70%;
         margin-top: 0.8rem;
         margin-left: 0.2rem;
     }
@@ -132,14 +129,14 @@ form {
         grid-area: 3/ 3 / 4 / 4;
         width: 7.5rem;
         margin-top: 1.5rem;
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
     .botontxt {
         grid-area: 6 / 1 / 6 / 3;
         font-size: 1.5rem;
         font-weight: 800;
-        margin-top: 3rem;
-        margin-left: 8.9rem;
+        margin-top: 2.4rem;
+        margin-left: 8rem;
     }
     
 }
