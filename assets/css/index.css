@@ -18,70 +18,71 @@ body {
 
 /*navegacion*/
 
-.header{
+.header {
     background-color: #fdf0ee;
-    width: 85.5%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 8rem;
     position: fixed;
-    top: 0;
+    top: 0rem;
     z-index: 1000;
 }
 
-.header .logo img{
+.header .logo img {
     height: 7rem;
     width: auto;
 }
 
-.header a{
+.header a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
-    
+
 }
 
-.anguloAbajo{
+.anguloAbajo {
     height: 1rem;
     width: auto;
 }
 
 
-.conejoCuenta{
+.conejoCuenta {
     grid-area: 1 / 1 / 3 / 1;
     height: 7rem;
     width: auto;
 }
 
-.header .lista{
+.header .lista {
     display: inline-block;
     padding: 0rem 1.5rem;
     margin-top: 4rem;
 }
 
 
-.cuenta{
+.cuenta {
     display: flex;
     align-items: center;
     display: grid;
     grid-template-columns: 30% 41% 38%;
-    grid-template-rows: 30% 20% ;
+    grid-template-rows: 30% 20%;
     margin-top: 4rem;
     margin-right: 2rem;
 }
 
-.header .banner{
+.header .banner {
     display: flex;
 }
 
-.iniciarSesion{
+.iniciarSesion {
     grid-area: 1 / 2 / 2 / 2;
 }
-.registrarse{
+
+.registrarse {
     grid-area: 1 / 3 / 2 / 3;
 }
-.miCuenta{
+
+.miCuenta {
     grid-area: 2 / 2 / 3 / 4;
     display: flex;
     justify-content: center;
@@ -92,45 +93,46 @@ body {
     font-size: 1.5rem;
     font-weight: 450;
 }
-.contactame{
+
+.contactame {
     height: 7rem;
     width: auto;
     margin-top: 1rem;
 }
 
 /*sublistas*/
-.header nav ul li{
+.header nav ul li {
     position: relative;
 }
 
-li{
+li {
     display: none;
     list-style-type: none;
     position: absolute;
     top: 55%;
     background-color: white;
-    padding: 0.3rem;    
+    padding: 0.3rem;
 }
 
-.lista:hover li{
+.lista:hover li {
     display: block;
 }
 
-.lista li a{
+.lista li a {
     font-size: 1rem;
     max-width: 7rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-nav{
+nav {
     height: 9rem;
 }
 
 
 /*Home*/
 
-.tablaSection{
+.tablaSection {
     display: grid;
     grid-template-columns: 19% 30% 5% 45%;
     grid-template-rows: 25% 30% 3% 30%;
@@ -138,19 +140,19 @@ nav{
     height: 50rem;
 }
 
-.brillos{
+.brillos {
     grid-area: 1/ 1 / 1 / 1;
     width: 15rem;
     height: auto;
 }
 
-.r_ococoquette{
+.r_ococoquette {
     grid-area: 2/ 1 / 2/ 3;
     display: flex;
     width: 50%;
-  }
+}
 
-  .ococoquette{
+.ococoquette {
     grid-area: 2/ 1 / 2/ 3;
     font-size: 3rem;
     font-family: "Nunito", sans-serif;
@@ -158,49 +160,95 @@ nav{
     align-items: center;
     justify-content: flex-start;
     margin-top: 3rem;
-  }
+}
 
-  .imagenR{
-     grid-area: 2/ 1 / 2/ 3;
+.imagenR {
+    grid-area: 2/ 1 / 2/ 3;
     padding-left: 3rem;
     width: auto;
     height: 12rem;
     margin-top: 2rem;
-  }
+}
 
-  .centroEstetica{
-    grid-area: 2/ 2 / 3/ 3;
+.centroEstetica {
+    grid-area: 2/ 1 / 3/ 3;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-family: "Alice", serif;
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     font-weight: 300;
     margin-top: 12.5rem;
-  }
+    margin-left: 10rem;
+}
 
-  .conoceMas{
+.conoceMas {
     grid-area: 4/ 1 / 5/ 4;
     width: auto;
     height: 9rem;
     display: flex;
     align-items: center;
     margin-left: 5.2rem;
-  }
+}
 
-  .conejoCorazon{
+.conejoCorazon {
     grid-area: 1/ 4 / 2/ 5;
     width: 38rem;
     height: auto;
     margin-top: 9rem;
- }
-   
+}
 
-   
-   
-   
 
+
+/* SOBRE LA EMPRESA */
+
+/*este causa error*/
+.contenedorCarrusel {
+    width: 100%;
+    height: 55rem;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5rem;
+}
+
+.carruseles {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.carruselSection {
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.carruselSection img {
+    width: 99%;
+    height: 100%;
     
-  
+}
 
-  
+.botonIzquierda,
+.botonDerecha {
+    display: flex;
+    position: absolute;
+    top: 81%;
+    cursor: pointer;
+    transition: .5s ease;
+    user-select: none;
+}
+
+.botonIzquierda {
+    left: 30rem;
+}
+
+.botonDerecha {
+    right: 25rem;
+}
+
+.botonIzquierda img {
+    width: 13rem;
+}
+
+.botonDerecha img {
+    width: 15rem;
+}
