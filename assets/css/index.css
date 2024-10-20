@@ -129,6 +129,19 @@ nav {
     height: 9rem;
 }
 
+/*Menu movil*/
+
+.ri-menu-line{
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    color: #f19cb0;
+}
+
+.ri-close-fill{
+    display: none;
+}
+
 
 /*Home*/
 
@@ -153,7 +166,6 @@ nav {
 }
 
 .ococoquette {
-    grid-area: 2/ 1 / 2/ 3;
     font-size: 3rem;
     font-family: "Nunito", sans-serif;
     display: flex;
@@ -201,7 +213,6 @@ nav {
 
 /* SOBRE LA EMPRESA */
 
-/*este causa error*/
 .contenedorCarrusel {
     width: 100%;
     height: 55rem;
@@ -224,7 +235,7 @@ nav {
 .carruselSection img {
     width: 99%;
     height: 100%;
-    
+
 }
 
 .botonIzquierda,
@@ -235,6 +246,7 @@ nav {
     cursor: pointer;
     transition: .5s ease;
     user-select: none;
+    filter: brightness(0.95) contrast(0.9) saturate(2.4) hue-rotate(-10deg);
 }
 
 .botonIzquierda {
@@ -251,4 +263,178 @@ nav {
 
 .botonDerecha img {
     width: 15rem;
+}
+
+/*MEDIA QUERIS*/
+@media (max-width: 480px) {
+
+ /*menu*/   
+.header{
+    height: 5rem;
+}
+
+ .header .logo img {
+    height: 5rem;
+}
+ .ri-menu-line {
+        display: block;
+        margin-left: 19.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contactame {
+        display: none;
+    }
+
+    .conejoCuenta {
+        display: none;
+    }
+
+    .cuenta {
+        position: absolute;
+        margin-left: 5rem;
+        margin-top: 1rem;
+
+    }
+
+    .registrarse {
+        margin-left: 1.8rem;
+        
+    }
+
+    .miCuenta {
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+
+    }
+    
+    .cuenta .miCuenta {
+        font-size: 1.3rem;
+        font-weight: 450;
+    }
+
+    .banner {
+        background-color: rgba(253, 245, 245, 0.5);
+        backdrop-filter: blur(1rem);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: 16rem;
+        width: 14rem;
+        height: 54.5rem;
+        margin-top: 49rem;
+        z-index: 998;
+       
+        
+    }
+
+    .cuenta a{
+        font-size: 1rem;
+    }
+
+    /*Sublistas*/
+   
+    li {
+        display: none;
+        top: 0%;
+        background-color: transparent;
+        padding: 0rem;
+    }
+
+    .banner a{
+        font-size: 1.2rem;
+    }
+    .lista li a {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+   .lista:hover li {
+        display: block;
+    }
+
+
+    .anguloAbajo{
+        display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+       padding-left: 9.3rem;
+       margin-top: -1.2rem;
+    }
+    
+    .banner{
+    visibility: hidden;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+
+    .ri-close-fill{
+        font-size: 4rem;
+        cursor: pointer;
+        color: #f19cb0;
+        margin-left: 9.5rem;
+        display: block;
+    }
+    
+    /*home*/
+
+    .tablaSection{
+        margin-top: 5rem;
+        margin-left: 0.3rem;
+    }
+
+    .brillos {
+        grid-area: 1/ 1 / 1 / 3;
+        width: 10rem;
+    }
+    
+    .ococoquette {
+        grid-area: 2/ 1 / 2/ 3;
+        font-size: 2.5rem;
+    }
+
+    .r_ococoquette {
+        grid-area: 1/ 1 / 1/ 3;
+        margin-top: 3rem;
+    }
+    
+    .imagenR {
+        margin-top: 2.8rem;
+        padding-left: 0rem;
+        height: 6rem;
+    }
+    
+    .centroEstetica {
+        grid-area: 2/ 1 / 3/ 5;
+        font-size: 2rem;
+        margin-top: 0rem;
+        margin-left: 2.5rem;
+    }
+    
+    .conoceMas {
+        grid-area: 2/ 1 / 5/ 4;
+        width: auto;
+        height: 6rem;
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+    }
+    
+    .conejoCorazon {
+        grid-area: 2/ 1 / 5/ 5;
+        width: 28rem;
+        height: auto;
+        margin-top: 10rem;
+    }
+
+    /* SOBRE LA EMPRESA */
+    .contenedorCarrusel {
+        width: 100%;
+        height: 50rem;
+        position: relative;
+        overflow: hidden;
+        padding-top: 5rem;
+    }
+    
 }

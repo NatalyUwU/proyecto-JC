@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        referrerpolicy="no-referrer" />
 
 
 </head>
@@ -24,9 +26,15 @@
         <div class="logo">
             <a href="./index.html"> <img src="../image/logo rococoquette.png" class="logo" alt="logo rococoquette"></a>
         </div>
-        <nav class="banner">
 
+        <div>
+            <i class="ri-menu-line" id="abrir"></i>
+        </div>
+
+        <nav class="banner" id="nav">
             <!--Servicios===-->
+            <i class="ri-close-fill" id="cerrar"></i>
+
             <ul class="lista"><a href="#" class="lista-Banner">Servicios</a>
                 <img src="../image/anguloAbajo.png" class="anguloAbajo" alt="">
                 <!--sublista===-->
@@ -67,6 +75,7 @@
             <a href="./registro.html" target="_blank" class="registrarse">Registrarse</a><br>
             <a href="" class="miCuenta">mi cuenta</a>
         </div>
+
     </header>
 
     <!--==================== HOME ====================-->
@@ -77,13 +86,12 @@
             <h2 class="ococoquette">OCOCOQUETTE</h2>
         </div>
         <h1 class="centroEstetica">centro de estética</h1>
-        <a href="#slider" class="conoceMas"><img src="../image/dedoBanner.png" class="conoceMas"
-                alt="imagen dedo"></a>
+        <a href="#slider" class="conoceMas"><img src="../image/dedoBanner.png" class="conoceMas" alt="imagen dedo"></a>
         <img src="../image/conejo corazon.png" class="conejoCorazon" alt="imagen conejo corazon">
     </section>
 
     <!--==================== SOBRE LA EMPRESA ====================-->
-    
+
     <section class="contenedorCarrusel">
         <div class="carruseles" id="slider">
             <section class="carruselSection">
@@ -100,7 +108,9 @@
         <div class="botonDerecha"><img src="../image/flechasIconoDerecha.png" alt=""></div>
     </section>
 
-<script src="../js/index.js"></script>
+    <script src="../js/carruselSobreLaEmpresa.js"></script>
+    <script src="../js/menuHamburguesaIndez.js"></script>
 
 </body>
+
 </html>
