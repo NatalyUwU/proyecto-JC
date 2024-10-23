@@ -410,7 +410,40 @@ mientras que align-items determina como los elementos en su conjunto están alin
 -----------------RELACIONAR CSS
 @import url ("link del archivo");
 
+-------------------------------------------------JS
+crear una variable donde se va a¿ almacenar el elemento que traeremos:
+const nav = document.querySelector ("#nav");            desde el css, trae el primero que coindica
 
+ let prueba = document.getElementById("elemento");                   por id
+ carruselSection = document.getElementsByClassName("elemento");                     por clase
+  carruselSection = document.getElementsByTagName("elemento");               por etiqueta
 
+  ----texto
 
+  let pruebaText = document.querySelector("#elemento p");    el p que esta dentro de elemento
+        pruebaText.textContent = "Hola";  se le agrega texto
+        pruebaText.innerHTML = "<p> </p>";       agregar etiquetas a html
+
+----atributo
+         pruebaText.setAtribute = ("id", ""enlaceDiv");   agregar atributo, primero atributo y luego nombre del atributo
+          pruebaText.setAtribute = ("href", ""enlaceDiv"); 
+
+----clase
+pruebaText.classList.add = (".classStyle");  agregar clase si ya tiene otra clase
+pruebaText.classList.remove = (".classStyle");  quitar clase si ya tiene otra 
+
+------ crear  elemento
+ let carruselSection = document.createElemet("h1");  crear elemento
+  let body = document.getElementById("body"); 
+
+  ----elemento y contenedor padre
+  body.appendChlid(carruselSection); agregar un elemento como hijo a un contenedor padre
+  body.removeChlid(carruselSection); eliminar un elemento como hijo a un contenedor padre
+
+  ---capturar evento
+  botonIzquierda.addEventListener("click", function(){      evento y luego funcion
+
+  mouseover, mouseout
+  
+  })  
 */

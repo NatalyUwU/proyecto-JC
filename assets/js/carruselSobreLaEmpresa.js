@@ -3,6 +3,8 @@ const botonIzquierda = document.querySelector(".botonIzquierda"),
     slider = document.querySelector("#slider"),
     carruselSection = document.querySelectorAll(".carruselSection");
 
+   
+
 
 botonIzquierda.addEventListener("click", e => moverIzquierda())
 botonDerecha.addEventListener("click", e => moverDerecha())

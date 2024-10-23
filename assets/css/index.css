@@ -100,6 +100,10 @@ body {
     margin-top: 1rem;
 }
 
+.miCuenta{
+    visibility: hidden;
+}
+
 /*sublistas*/
 .header nav ul li {
     position: relative;
@@ -112,10 +116,6 @@ li {
     top: 55%;
     background-color: white;
     padding: 0.3rem;
-}
-
-.lista:hover li {
-    display: block;
 }
 
 .lista li a {
@@ -214,7 +214,7 @@ nav {
 /* SOBRE LA EMPRESA */
 
 .imgCarruselMovil {
-    visibility: hidden;
+    display: none;
 }
 
 .contenedorCarrusel {
@@ -223,6 +223,7 @@ nav {
     position: relative;
     overflow: hidden;
     padding-top: 5rem;
+    
 }
 
 .carruseles {
@@ -283,8 +284,11 @@ nav {
 
     .ri-menu-line {
         display: block;
-        margin-left: 19.5rem;
+        margin-left: 19.6rem;
         margin-bottom: 1rem;
+        margin-top: 0.6rem;
+        font-size: 2.5rem;
+
     }
 
     .contactame {
@@ -324,10 +328,10 @@ nav {
         display: flex;
         flex-direction: column;
         position: absolute;
-        margin-left: 16rem;
+        margin-left: 53%;
         width: 14rem;
-        height: 54.5rem;
-        margin-top: 49rem;
+        height: 56.5rem;
+        margin-top: 51rem;
         z-index: 998;
 
 
@@ -337,7 +341,7 @@ nav {
         font-size: 1rem;
     }
 
-    /*Sublistas*/
+    /*Sublistas 1*/
 
     li {
         display: none;
@@ -352,11 +356,7 @@ nav {
 
     .lista li a {
         font-size: 1rem;
-        padding-top: 1rem;
-    }
-
-    .lista:hover li {
-        display: block;
+        margin-top: 1rem;
     }
 
 
@@ -364,7 +364,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding-left: 9.3rem;
+        margin-left: 9rem;
         margin-top: -1.2rem;
     }
 
@@ -377,12 +377,14 @@ nav {
     }
 
     .ri-close-fill {
-        font-size: 4rem;
+        font-size: 3.5rem;
         cursor: pointer;
         color: #f19cb0;
         margin-left: 9.5rem;
+        margin-top: 0.5rem;
         display: block;
     }
+
 
     /*home*/
 
@@ -448,14 +450,12 @@ nav {
     }
 
     .imgCarruselMovil {
-        visibility: visible;
+        display: block;
     }
 
     .botonIzquierda,
     .botonDerecha {
-       
         top: 43rem;
-        
     }
 
     .botonIzquierda {
