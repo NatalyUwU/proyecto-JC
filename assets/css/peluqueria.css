@@ -111,15 +111,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-
 .iconoP1 {
     width: 7.5rem;
-    padding-top: 0.8rem;
+   margin-top: 0.8rem;
     cursor: pointer;
+    transition: transform 0.5s ease; 
 }
 
 .iconoP2 {
@@ -140,6 +140,10 @@ a {
     margin-left: 0.5rem;
     display: flex;
     justify-content: space-around;
+}
+
+.rotar {
+    transform: rotate(360deg); /* Aplica la rotación completa */
 }
 
 
@@ -165,7 +169,7 @@ a {
 
 .carruselSection {
     width: calc(100% / 2);
-    height: 71%;
+    height: 37rem;
 }
 
 .carruselSection img {
@@ -193,10 +197,13 @@ a {
     left: 83.5%;
 }
 
-.botonIzquierda img {
+.botonIzquierda {
     width: 15rem;
 }
 
-.botonDerecha img {
+.botonDerecha {
     width: 17rem;
 }
+
+
+
