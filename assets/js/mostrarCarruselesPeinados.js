@@ -18,6 +18,8 @@ const contenedorBotones = document.getElementById('contenedorBotones');
 //Animacion al dar clic en iconos
 
 iconoP1 = document.querySelector(".iconoP1"); 
+iconoP2 = document.querySelector(".iconoP2"); 
+iconoP3 = document.querySelector(".iconoP3"); 
 
 // Función para mostrar peinados boda
 iconoBoda.addEventListener('click', function() {
@@ -39,6 +41,7 @@ iconoBoda.addEventListener('click', function() {
     }, 280);
 });
 
+
 // Función para mostrar peinados elegantes
 IconoElegante.addEventListener('click', function() {
     carrusel2Peinados1.style.display = 'block';
@@ -47,7 +50,15 @@ IconoElegante.addEventListener('click', function() {
     carrusel1Peinados2.style.display = 'none';
     carrusel3Peinados1.style.display = 'none';
     carrusel3Peinados2.style.display = 'none';
-    
+     //animacion icono
+     iconoP2.classList.add('rotar');
+     iconoP2.style.border = '2px solid pink';
+     iconoP2.style.borderRadius = '50%';
+     iconoP2.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.5)';
+ 
+    setTimeout(function(){
+        iconoP2.classList.remove('rotar');
+     }, 280);
 });
 
 // Función para mostrar peinados niña
@@ -58,6 +69,15 @@ IconoNiña.addEventListener('click', function() {
     carrusel2Peinados2.style.display = 'none';
     carrusel1Peinados1.style.display = 'none';
     carrusel1Peinados2.style.display = 'none';
+     //animacion icono
+     iconoP3.classList.add('rotar');
+     iconoP3.style.border = '2px solid pink';
+     iconoP3.style.borderRadius = '50%';
+     iconoP3.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.5)';
+ 
+    setTimeout(function(){
+        iconoP3.classList.remove('rotar');
+     }, 280);
     
 });
 
