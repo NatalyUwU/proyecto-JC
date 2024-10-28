@@ -27,7 +27,7 @@ h1 {
 form {
     display: grid;
     grid-template-columns: 40% 38% 8% 5% ;
-    grid-template-rows: 25% 8% 25% 8% 25% 8% 25% 8% 25% 8% 95%;
+    grid-template-rows: 25% 8% 25% 8% 25% 8% 25% 8% 25% 47% 16%;
     margin-left: 13%;
 }
 

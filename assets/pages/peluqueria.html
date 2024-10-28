@@ -10,6 +10,11 @@
         referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -78,41 +83,65 @@
 
     <section class="serviciosPeluqueria">
         <h1 class="peluqueria">PELUQUERIA</h1>
-        <h2 class="peinados"> <a href="">Peinados</a></h2>
-        <a href="" class="txPeinados">En nuestros peinados personalizados utilizamos el visagismo y productos de alta
-            calidad para brindarte un
-            resultado que refleje tu esencia</a>
-
-        <h2 class="Tcapilares"> <a href="">Tratamientos Capilares</a></h2>
-        <a href="" class="txCapilares">Nuestro equipo de expertos comprende profundamente la salud del cuero cabelludo y
-            la estructura del cabello,
-            lo que nos permite ofrecerte soluciones personalizadas que se adaptan a tus necesidades. Con nuestros
-            tratamientos, conseguirás un cabello brillante, fuerte e hidratado, además de ayudar a controlar el exceso
-            de grasa y combatir la caspa.</a>
-
-        <h2 class="cepillado"><a href="">Cepillado</a></h2>
-        <a href="" class="txCepillado">Utilizamos técnicas especializadas y herramientas de alta calidad para estilizar
-            tu cabello, logrando un acabado brillante y sedoso que se adapte a tu estilo.</a>
+        <div class="contenedorPeinados">
+            <h2><a class="peinados" href="#contenedorCarrusel">Peinados </a></h2>
+            <a href="#contenedorCarrusel" class="txPeinados">En nuestros peinados personalizados utilizamos el visagismo y productos de
+                alta
+                calidad para brindarte un resultado que refleje tu esencia</a>
+        </div>
+        <div class="contenedorTcapilare">
+            <h2><a class="Tcapilares" href="">Tratamientos Capilares</a></h2>
+            <a href="" class="txCapilares">Nuestro equipo de expertos comprende profundamente la salud del cuero
+                cabelludo y
+                la estructura del cabello,
+                lo que nos permite ofrecerte soluciones personalizadas que se adaptan a tus necesidades. Con nuestros
+                tratamientos, conseguirás un cabello brillante, fuerte e hidratado, además de ayudar a controlar el
+                exceso
+                de grasa y combatir la caspa.</a>
+        </div>
+        <div>
+            <h2><a class="cepillado" href="">Cepillado</a></h2>
+            <a href="" class="txCepillado">Utilizamos técnicas especializadas y herramientas de alta calidad para
+                estilizar
+                tu cabello, logrando un acabado brillante y sedoso que se adapte a tu estilo.</a>
+        </div>
     </section>
 
-    <section>
-        
+
+
+
+
+    <section class="contenedorCarrusel" id="contenedorCarrusel">
+        <div class="contenedoriconos">
+            <div class="IconoBoda" id="IconoBoda">
+                <img src="../image/iconoBoda.png" class="iconoP1" alt="">
+                <p class="txIcono">Boda</p>
+            </div>
+            <div class="IconoElegante">
+                <img src="../image/iconoElegante.png" class="iconoP2" alt="">
+                <p class="txIcono">Elegante</p>
+            </div>
+            <div class="IconoNiña">
+                <img src="../image/iconoNiña.png" class="iconoP3" alt="">
+                <p class="txIcono">Niña</p>
+            </div>
+        </div>
+        <div class="carruseles" id="slider">
+            <section class="carruselSection">
+                <img src="../image/carruselPeinados1Carrusel1.png" alt="">
+            </section>
+            <section class="carruselSection">
+                <img src="../image/carruselPeinados2Carrusel1.png" alt="">
+            </section>
+        </div>
+        <div class="botonIzquierda"><img src="../image/flechasIconoIzquierda.png" alt=""></div>
+        <div class="botonDerecha"><img src="../image/flechasIconoDerecha.png" alt=""></div>
     </section>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-    <script src="../js/carruselSobreLaEmpresa.js"></script>
+    <script src="../js/carruselPeluqueria.js"></script>
     <script src="../js/menuHamburguesaIndez.js"></script>
 
 

@@ -8,7 +8,10 @@
 }
 
 /*navegacion*/
-
+element.style {
+    display: block;
+    border: none;
+}
 .header {
     background-color: #fdf0ee;
     width: 100%;
@@ -23,7 +26,11 @@
 .header .logo img {
     height: 7rem;
     width: auto;
+    border: 0rem;
+    
 }
+
+
 
 .header a {
     text-decoration: none;
@@ -127,7 +134,6 @@ a{
 }
 
 
-
 /*Menu movil*/
 
 .ri-menu-line {
@@ -143,7 +149,7 @@ a{
 
 
 /*MEDIA QUERIS*/
-@media (max-width: 480px) {
+@media (max-width: 1155px) {
 
     /*menu*/
     .header {
@@ -205,8 +211,7 @@ a{
         height: 56.5rem;
         margin-top: 51rem;
         z-index: 998;
-
-
+    
     }
 
     .cuenta a {

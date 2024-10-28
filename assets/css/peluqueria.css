@@ -1,5 +1,6 @@
 @import url("nav.css");
 
+
 * {
     padding: 0;
     margin: 0;
@@ -8,85 +9,194 @@
     color: black;
 }
 
-body {
+/*PRIMERA SECCION*/
+.serviciosPeluqueria {
     background-image: url(../image/fondoServicios.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.serviciosPeluqueria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+
+    padding-left: 3rem;
+    padding-right: 5rem;
+
+}
+
+.peluqueria {
+    margin-top: 5rem;
+    color: #e5808e;
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    padding-left: 0.5rem;
+}
+
+.contenedorPeinados {
+    padding-right: 3rem;
+}
+
+.peinados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
+    color: #e5808e;
+    padding-left: 3rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.contenedorTcapilare {
+    height: 14.5rem;
+    margin-top: 3rem;
+}
+
+.Tcapilares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-bottom: 0.5rem;
+    color: #e5808e;
+    font-family: "Nunito", sans-serif;
+}
+
+.txCapilares {
+    padding-left: 12rem;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cepillado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5808e;
+    font-family: "Nunito", sans-serif;
+}
+
+.txCepillado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+/* slider peinados */
+.contenedorCarrusel{
+    background-image: url(../image/fondo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-.serviciosPeluqueria{
-    display: grid;
-    grid-template-rows: 28% 7% 15% 20% 19% 15% 25% 15% 15% 20% ;
-    grid-template-columns: 36% 22%  24% 7%;
-    margin-top: 14rem;
-    margin-left: 7rem;
-}
-
-.peluqueria{
-    grid-area: 1/ 2 / 1/ 3;
+.contenedoriconos {
     display: flex;
     align-items: center;
-    margin-left: 1rem;
-    color: #e5808e;
-    font-family: "Nunito", sans-serif;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-.peinados{
-    grid-area: 3/ 2 / 3/ 3;
+
+.iconoP1 {
+    width: 7.5rem;
+    padding-top: 0.8rem;
+    cursor: pointer;
+}
+
+.iconoP2 {
+    width: 8.5rem;
+    cursor: pointer;
+}
+
+.iconoP3 {
+    width: 8.3rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.txIcono {
+    font-family: "Alice", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
     display: flex;
-    align-items: center;
-    margin-left: 4rem;
-    color: #e5808e;
-    font-family: "Nunito", sans-serif;
+    justify-content: space-around;
 }
 
-.Tcapilares{
-    grid-area: 6/ 2 / 6/ 3;
+
+/*Carrusel Peinados*/
+
+.imgCarruselMovil {
+    display: none;
+}
+
+.contenedorCarrusel {
+    width: 100%;
+    height: 48.8rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.carruseles {
+    width: 200%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    color: #e5808e;
-    font-family: "Nunito", sans-serif;
 }
 
-.cepillado{
-    grid-area: 9/ 2 / 9/ 3;
+.carruselSection {
+    width: calc(100% / 2);
+    height: 71%;
+}
+
+.carruselSection img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.botonIzquierda,
+.botonDerecha {
     display: flex;
-    align-items: center;
-    margin-left: 5rem;
-    color: #e5808e;
-    font-family: "Nunito", sans-serif;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    user-select: none;
+    filter: brightness(0.95) contrast(0.9) saturate(2.4) hue-rotate(-10deg);
 }
 
-.txPeinados{
-    grid-area: 4/ 1 / 4/ 4;
-    font-size: 1.1rem;
-    margin-left: 2rem;
-    text-align: center;
-    
+.botonIzquierda {
+   right: 85%;
 }
 
-.txCapilares{
-    grid-area: 7/ 1 / 7/ 5;
-    margin-left: 8rem;
-    text-align: center;
-    font-size: 1.1rem;
+.botonDerecha {
+    left: 83.5%;
 }
 
-.txCepillado{
-    grid-area: 10/ 1 / 10/ 5;
-    font-size: 1.1rem;
-    text-align: center;
-    margin-left: 1.1rem;
+.botonIzquierda img {
+    width: 15rem;
 }
 
-h2 a{
-     color: #e5808e;
-     font-family: "Nunito", sans-serif;
-}
-
-a{
-    text-decoration: none;
-    
+.botonDerecha img {
+    width: 17rem;
 }
