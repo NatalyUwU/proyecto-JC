@@ -17,7 +17,7 @@ element.style {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 8rem;
+    height: 7rem;
     position: fixed;
     top: 0rem;
     z-index: 1000;
@@ -111,7 +111,7 @@ li {
     display: none;
     list-style-type: none;
     position: absolute;
-    top: 55%;
+    top: 50%;
     background-color: white;
     padding: 0.3rem;
 }

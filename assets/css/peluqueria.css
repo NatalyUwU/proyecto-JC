@@ -1,4 +1,6 @@
 @import url("nav.css");
+@import url("piePagina.css");
+
 
 
 * {
@@ -29,10 +31,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centra el contenido verticalmente */
     align-items: center;
-    /* Centra el contenido horizontalmente */
-
     padding-left: 3rem;
     padding-right: 5rem;
 
@@ -100,7 +99,7 @@ a {
 }
 
 /* slider peinados */
-.contenedorCarrusel{
+.contenedorCarrusel {
     background-image: url(../image/fondo.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -118,21 +117,23 @@ a {
 
 .iconoP1 {
     width: 7.5rem;
-   margin-top: 0.8rem;
+    margin-top: 0.8rem;
     cursor: pointer;
-    transition: transform 0.5s ease; 
+    transition: transform 0.5s ease;
 }
 
 .iconoP2 {
     width: 7.5rem;
     margin-top: 0.5rem;
     cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
 .iconoP3 {
     width: 7.5rem;
     margin-top: 0.5rem;
     cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
 .txIcono {
@@ -145,7 +146,8 @@ a {
 }
 
 .rotar {
-    transform: rotate(360deg); /* Aplica la rotación completa */
+    transform: rotate(360deg);
+    /* Aplica la rotación completa */
 }
 
 
@@ -192,7 +194,7 @@ a {
 }
 
 .botonIzquierda {
-   right: 85%;
+    right: 85%;
 }
 
 .botonDerecha {
@@ -208,4 +210,7 @@ a {
 }
 
 
-
+/*pie pagina*/
+.piePagina{
+    margin-top: 0rem;
+}
