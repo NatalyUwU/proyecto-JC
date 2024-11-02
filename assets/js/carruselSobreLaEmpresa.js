@@ -14,7 +14,6 @@ let anchoImagen = 100 / carruselSection.length;
 let posicion = 0;
 
 function moverDerecha() {
-    
     if (posicion >= carruselSection.length-1) {
         operacion = 0;
         posicion = 0;

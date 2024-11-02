@@ -113,19 +113,27 @@ i {
 /*MEDIA QUERIS*/
 @media (max-width: 1034px) {
 
+    .piePagHorizontal {
+        width: 99%;
+    }
+
     .logoPie img {
         width: 5rem;
-        margin-left: 0.2rem;
+        margin-left: 0rem;
     }
 
     .logoPie h3 {
         font-size: 0.8rem;
         width: 6rem;
+        margin-left: 1rem;
     }
 
     .logoPie {
         margin-right: 0rem;
         width: 15rem;
+        margin-left: 0rem;
+        display: flex;
+        flex-direction: column;
     }
 
     h4 {
@@ -182,5 +190,11 @@ i {
 
     .inocosContacto{
         margin-top: 0.7rem;
+    }
+
+    .logoPie a{
+       display: flex;
+       justify-content: flex-start;
+       margin-left: 1rem;
     }
 }

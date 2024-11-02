@@ -2,6 +2,7 @@
 @import url("piePagina.css");
 @import url("sliderPeinados.css");
 @import url("sliderTcapilares.css");
+@import url("sliderCepillados.css");
 
 
 
@@ -11,6 +12,7 @@
     box-sizing: border-box;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
+    scroll-behavior: smooth;
 }
 
 /*PRIMERA SECCION*/
@@ -20,13 +22,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
 }
 
 a {
     text-decoration: none;
     text-align: center;
-
 }
 
 .serviciosPeluqueria {
@@ -63,7 +63,7 @@ a {
 }
 
 .contenedorTcapilare {
-    height: 14.5rem;
+    height: 15rem;
     margin-top: 3rem;
 }
 
@@ -98,4 +98,58 @@ a {
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
+}
+
+@media (max-width: 500px) {
+    /*SERVICIOS DE PELUQUERIA*/
+    .serviciosPeluqueria {
+        background-image: url(../image/fondoServiciosMovil.png);
+        padding-left: 3rem;
+        padding-right: 4rem;
+
+    }
+
+    .peluqueria {
+        margin-top: 5rem;
+        font-size: 1.8rem;
+    }
+
+    .peinados {
+        margin-top: 4.5rem;
+        height: 4rem;
+        padding-top: 2rem;
+    }
+
+    .txPeinados {
+        font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Tcapilares {
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+        padding-left: 3rem;
+    }
+
+    .txCapilares {
+        font-size: 0.8rem;
+        padding-left: 4rem;
+        padding-right: 0rem;
+        margin-top: 0.5rem;
+        
+    }
+    .cepillado{
+        margin-top: 0.5rem;
+    }
+    .txCepillado {
+        font-size: 0.8rem;
+        margin-left: 0rem;
+        padding-left: 1rem;
+    }
 }
