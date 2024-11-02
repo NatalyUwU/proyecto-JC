@@ -8,6 +8,7 @@
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
     border: 0rem;
+    scroll-behavior: smooth;
 }
 
 /*Fondo pagina inicio*/
@@ -17,6 +18,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+   
 }
 
 /*Home*/
@@ -71,13 +73,14 @@ body {
 }
 /* SOBRE LA EMPRESA */
 
+
 .imgCarruselMovil {
     display: none;
 }
 
 .contenedorCarrusel {
     width: 100%;
-    height: 55rem;
+    height: 57rem;
     position: relative;
     overflow: hidden;
     padding-top: 5rem;
@@ -95,9 +98,8 @@ body {
 }
 
 .carruselSection img {
-    width: 99%;
+    width: 100%;
     height: 100%;
-
 }
 
 .botonIzquierda,
@@ -131,14 +133,13 @@ body {
 
 @media (max-width: 1155px) {
 
-    
-
     /*home*/
 
     .tablaSection {
        flex-direction: column;
        align-items: center;
        margin-top: 8rem;
+       
     }
     .r_ococoquette{
         width: 10%;
@@ -184,10 +185,16 @@ body {
     /* SOBRE LA EMPRESA */
     .contenedorCarrusel {
         width: 100%;
-        height: 50rem;
+        height: 49rem;
         position: relative;
         overflow: hidden;
-        padding-top: 5rem;
+        margin-top: 1rem;
+    }
+    .contenedorCarrusel img{
+        height: 43rem;
+    }
+    .carruseles{
+        margin-top: 4.5rem;
     }
 
     .imgCarruselPc {
@@ -200,7 +207,7 @@ body {
 
     .botonIzquierda,
     .botonDerecha {
-        top: 43rem;
+        top: 42rem;
     }
 
     .botonIzquierda {
@@ -213,10 +220,12 @@ body {
 
     .botonIzquierda img {
         width: 9rem;
+        height: auto;
     }
 
     .botonDerecha img {
         width: 10rem;
+        height: auto;
     }
     .contenedorCarrusel{
         padding-top: 1rem;

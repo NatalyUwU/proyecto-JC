@@ -1,0 +1,139 @@
+/* slider tratamientos capilares */
+.contenedorCarrusel2 {
+    background-image: url(../image/fondo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedoriconos2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.iconoC1 {
+    width: 7.5rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.iconoC2 {
+    width: 7.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.iconoC3 {
+    width: 7.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.txIcono2 {
+    font-family: "Alice", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rotar {
+    transform: rotate(360deg);
+    /* Aplica la rotación completa */
+}
+
+
+/*Carrusel tratamientos Capilares*/
+
+.contenedorCarrusel2 {
+    width: 100%;
+    height: 48.8rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.carruseles2 {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.carruselSection2 {
+    width: calc(100% / 6);
+    height: 37rem;
+}
+
+.carruselSection2 img {
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
+
+.botonIzquierda2,
+.botonDerecha2 {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    user-select: none;
+    filter: brightness(0.95) contrast(0.9) saturate(2.4) hue-rotate(-10deg);
+}
+
+.botonIzquierda2 {
+    right: 87%;
+    width: 15rem;
+}
+
+.botonDerecha2 {
+    left: 85%;
+    width: 17rem;
+}
+
+
+/*pie pagina*/
+.piePagina {
+    margin-top: 0rem;
+}
+
+@media (max-width: 500px) {
+    .contenedorCarrusel2 {
+        height: 40rem;
+    }
+
+    .botonIzquierda2,
+    .botonDerecha2 {
+        top: 55%;
+    }
+
+    .botonIzquierda2 {
+        right: 72%;
+        width: 10rem;
+    }
+
+    .botonDerecha2 {
+        left: 70%;
+        width: 12rem;
+    }
+
+    .carruselSection2 img {
+        width: 100%;
+        height: 90%;
+    }
+    .carruselSection2 {
+        width: calc(100% / 6);
+        height: 32rem;
+    }
+    .carruseles2 {
+        width: 600%;
+    }
+  }

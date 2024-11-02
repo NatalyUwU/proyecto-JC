@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
         referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
 </head>
@@ -41,6 +42,7 @@
                 <!--sublista===-->
                 <li><a href="../pages/peluqueria.html">Peluqueria</a></li>
                 <li><a href="">Depilación</a></li>
+                <li><a href="">Faciales</a></li>
             </ul>
 
             <!--Productos===-->
@@ -89,25 +91,24 @@
                 <h2 class="ococoquette">OCOCOQUETTE</h2>
             </div>
             <h1 class="centroEstetica">centro de estética</h1>
-            <a href="#contenedorCarrusel"><img src="../image/dedoBanner.png" class="conoceMas" alt="imagen dedo"></a>
+            <a href="#contenedorCarrusel"><img src="../image/dedoBanner.png" class="conoceMas" id="conoceMas" alt="imagen dedo"></a>
         </div>
         <img src="../image/conejo corazon.png" class="conejoCorazon" alt="imagen conejo corazon">
     </section>
 
     <!--==================== SOBRE LA EMPRESA ====================-->
-
     <section class="contenedorCarrusel" id="contenedorCarrusel">
         <div class="carruseles" id="slider">
-            <section class="carruselSection">
-                <img src="../image/itemCarrusel1.jpg" class="imgCarruselPc" alt="imagen bienvenida">
+            <section class="carruselSection" >
+                <img src="../image/itemCarrusel1.png" class="imgCarruselPc" alt="imagen bienvenida">
                 <img src="../image/img1CarruselMovil.png" class="imgCarruselMovil" alt="imagen bienvenida">
             </section>
             <section class="carruselSection">
-                <img src="../image/itemCarrusel2.jpg" class="imgCarruselPc" alt="no especializamos en">
+                <img src="../image/itemCarrusel2.png" class="imgCarruselPc" alt="no especializamos en">
                 <img src="../image/img2CarruselMovil.png" class="imgCarruselMovil" alt="imagen bienvenida">
             </section>
             <section class="carruselSection">
-                <img src="../image/itemCarrusel3.jpg" class="imgCarruselPc" alt="llamada a la accion">
+                <img src="../image/itemCarrusel3.png" class="imgCarruselPc" alt="llamada a la accion">
                 <img src="../image/img3CarruselMovil.png" class="imgCarruselMovil" alt="imagen bienvenida">
             </section>
         </div>
@@ -121,26 +122,36 @@
     <!--==================== PIE DE PAGINA ====================-->
 
     <section id="piePagina" class="piePagina">
+        <div class="piePagHorizontal">
+            <div class="logoPie">
+                <a href="./index.html"><img src="../image/logo rococoquette.png" alt="logo rococoquette"></a>
+                <h3>Porque Cuidarte es un <br>Acto de Amor Propio</h3>
+            </div>
         <div class="contacto">
-            <h4>Contacto</h4>
-            <a href="https://wa.me/573218305094" target="_blank">WhatsApp</a>
-            <a href="https://wa.me/573218305094" target="_blank">Correo Electronico</a>
-        </div>
-        <div class="Ubicacion">
-            <h4>Ubicacion</h4>
-            <a href="https://www.google.com/maps/search/Cra+5+Este+%232C-42,+Bogotá,+Colombia"
-                target="_blank">Dirección</a>
-            <a href="https://www.google.com/maps/search/Cra+5+Este+%232C-42,+Bogotá,+Colombia" target="_blank">Agenda tu
-                domicilio</a>
-        </div>
-        <div class="Suscribete">
-            <h3>ÚNETE</h3>
-            <p>Suscribete para recibir información sobre <br>nuevos productos, servicios y ofertas</p>
-            <div class="form">
-                <input type="email" placeholder="Ingresa tu correo" required>
-                <button type="submit">Suscribirse</button>
+            <h4>CONTACTO</h4>
+            <div class="inocosContacto">
+                <a href="https://wa.me/573218305094" target="_blank"><i class="ri-whatsapp-line"></i></i></a>
+                <a href="mailto:lauritatelle.03@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
             </div>
         </div>
+        <i class="ri-separator"></i>
+        <div class="Ubicacion">
+            <h4>UBICACIÓN</h4>
+            <a href="https://www.google.com/maps/search/Cra+5+Este+%232C-42,+Bogotá,+Colombia"
+                target="_blank">Dirección</a>
+            <a href="https://wa.me/573218305094" target="_blank">Agenda tu
+                domicilio</a>
+        </div>
+        <i class="ri-separator"></i>
+        <div class="Suscribete">
+            <h4>ÚNETE</h4>
+            <p>Suscribete para recibir información sobre <br>nuevos productos, servicios y ofertas</p>
+            <div class="form">
+                <input type="email" placeholder="Ingresa tu correo" class="inputPiePag" required>
+                <button type="submit" class="buttonPiePag" >Suscribirse</button>
+            </div>
+        </div>
+    </div>
         <div class="derechos">
             <p>Derechos reservados 2024, Laura Nataly Tellez Beltran</p>
         </div>
