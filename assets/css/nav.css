@@ -12,6 +12,7 @@ element.style {
     display: block;
     border: none;
 }
+
 .header {
     background-color: #fdf0ee;
     width: 100%;
@@ -27,7 +28,7 @@ element.style {
     height: 7rem;
     width: auto;
     border: 0rem;
-    
+
 }
 
 
@@ -98,7 +99,7 @@ element.style {
     margin-top: 1rem;
 }
 
-.miCuenta{
+.miCuenta {
     visibility: hidden;
 }
 
@@ -128,9 +129,9 @@ nav {
 }
 
 
-a{
+a {
     cursor: pointer;
-   
+
 }
 
 
@@ -211,12 +212,14 @@ a{
         height: 56.5rem;
         margin-top: 51rem;
         z-index: 998;
-    
+
     }
 
     .cuenta a {
         font-size: 1rem;
     }
+
+  
 
     /*Sublistas 1*/
 
@@ -234,7 +237,7 @@ a{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-left: 9rem;
+        margin-left: 10rem;
         margin-top: -1.2rem;
     }
 
@@ -261,6 +264,6 @@ a{
         padding: 0rem;
     }
 
-    
+
 
 }

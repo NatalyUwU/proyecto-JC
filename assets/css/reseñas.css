@@ -1,0 +1,39 @@
+/*Configuracion universal*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.reseñas{
+max-height: 120rem;
+display: flex;
+gap: 3rem;
+justify-content: flex-start;
+align-items: center;
+overflow-x: auto;
+margin-bottom: 10rem;
+padding-top: 16rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+
+.reseñas::-webkit-scrollbar{
+    display: none;
+}
+
+.itemReseñas{
+   width: 40rem;
+   height: 30rem;
+}
+
+@media (max-width: 674px){
+    .reseñas{
+        margin-bottom: 12rem;
+        padding-top: 14rem;
+        }
+.itemReseñas{
+   width: 27rem;
+   height: 25rem;
+}
+}
