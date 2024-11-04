@@ -5,35 +5,196 @@
     box-sizing: border-box;
 }
 
-.reseñas{
-max-height: 120rem;
-display: flex;
-gap: 3rem;
-justify-content: flex-start;
-align-items: center;
-overflow-x: auto;
-margin-bottom: 10rem;
-padding-top: 16rem;
-padding-left: 1.5rem;
-padding-right: 1.5rem;
+
+/*Reseñas Creadas*/
+.reseñas {
+    max-height: 120rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 8rem;
+    margin-bottom: 7rem;
+    padding-top: 18rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    scrollbar-color: #fbc9cf #ffeff1;
+    scrollbar-width: thin;
+
 }
 
-.reseñas::-webkit-scrollbar{
+.itemReseñas {
+    width: 40rem;
+    height: 30rem;
+}
+
+/*Reseñas del usuario*/
+
+.reseñaUsuario {
+    width: 40rem;
+    height: 30rem;
+    background-image: url(../image/reseñaBasia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.reseñaUsuario h3 {
+    color: #ed929e;
+    font-size: 1.5rem;
+    font-family: "Libre Baskerville", serif;
+    width: 30rem;
+    text-align: center;
+    padding: 1rem 0rem 2rem 3.5rem;
+}
+
+.formularioReseña {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5rem;
+    padding-right: 20rem;
+    width: 50rem;
+    font-family: 'Open Sans';
+    gap: 0.3rem;
+}
+
+.itemReseñasFormulario {
+    font-size: 1.3rem;
+}
+
+.formularioReseña label {
+    font-weight: 700;
+}
+
+.formularioReseña input {
+    border: 1.7px dashed #fbc9cf;
+    font-size: 1rem;
+}
+
+.formularioReseña textarea {
+    border: 1.7px dashed #fbc9cf;
+    font-size: 1rem;
+}
+
+
+.formularioReseña button {
+    height: 3rem;
+    margin-left: 10rem;
+    width: 10rem;
+    border-radius: 10rem;
+    background-color: #f7e0e1;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.8s ease all;
+}
+
+.formularioReseña button:hover {
+    background-color: #fbc9cf;
+}
+
+
+/*estrellas*/
+.estrellas {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.estrellas input[type="radio"] {
     display: none;
 }
 
-.itemReseñas{
-   width: 40rem;
-   height: 30rem;
+.estrellas label {
+    font-size: 2rem;
+    color: #fff0c6;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-@media (max-width: 674px){
-    .reseñas{
-        margin-bottom: 12rem;
-        padding-top: 14rem;
-        }
-.itemReseñas{
-   width: 27rem;
-   height: 25rem;
-}
+
+
+
+@media (max-width: 674px) {
+    .reseñas {
+        margin-bottom: 16rem;
+        padding-top: 20rem;
+        scrollbar-color: transparent;
+        scrollbar-width: none;
+    }
+
+    .itemReseñas {
+        width: 27rem;
+        height: 20rem;
+    }
+
+    .reseñas::-webkit-scrollbar {
+        display: none;
+    }
+
+    /*Reseñas del usuario*/
+
+    .reseñaUsuario {
+        width: 27rem;
+        height: 20rem;
+    }
+
+    .reseñaUsuario h3 {
+        font-size: 1.3rem;
+        width: 22rem;
+        padding: 0.8rem 0rem 0rem 1rem;
+    }
+
+    .formularioReseña {
+        margin-left: 1.8rem;
+        width: 40rem;
+        font-family: 'Open Sans';
+        gap: 0.3rem;
+    }
+
+    .itemReseñasFormulario {
+        font-size: 1rem;
+    }
+
+    .formularioReseña input {
+        font-size: 0.8rem;
+        padding-left: 0.3rem;
+    }
+
+    .formularioReseña textarea {
+        font-size: 0.8rem;
+        padding-left: 0.3rem;
+    }
+
+
+    .formularioReseña button {
+        height: 2rem;
+        margin-left: 2rem;
+        font-size: 0.9rem;
+        transition: 0.8s ease all;
+        margin-top: 0.3rem;
+    }
+
+    /*estrellas*/
+    .estrellas {
+        height: 2.5rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        justify-content: flex-start;
+    }
+
+    .estrellas label {
+        font-size: 1.3rem;
+    }
+
+    .agrupEstrelBoton {
+        display: flex;
+    }
+
 }

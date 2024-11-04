@@ -13,6 +13,7 @@ body {
     background-size: cover;
 }
 
+
 h1 {
     display: flex;
     padding-top: 7rem;
@@ -122,5 +123,27 @@ label{
         grid-area: 11 / 1 / 11 / 3;
         font-size: 150%;
         margin-top: 2.6rem;
+    }
+
+    
+}
+
+@media (min-width: 1369px){
+    body {
+        background-image: url(../image/fondoRegistroGrande.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .boton {
+        grid-area: 11 / 1 / 11 / 3;
+        font-size: 190%;
+        margin-left: 8rem;
+        
+    }
+    form {
+        grid-template-rows: 25% 8% 25% 8% 25% 8% 25% 8% 25% 42% 80%;
     }
 }

@@ -140,3 +140,19 @@ form {
     }
     
 }
+
+@media (min-width: 1369px){
+    body {
+        background-image: url(../image/fondoIniciarSesionGrande.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .botontxt{
+        margin-left: 15rem;
+    }
+    
+
+}

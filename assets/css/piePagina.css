@@ -60,7 +60,7 @@
     justify-content: center;
 }
 
-i {
+.piePagHorizontal i {
     color: #e5808e;
     font-size: 2rem;
 }
@@ -148,7 +148,7 @@ i {
         gap: 0.2rem;
     }
 
-    i {
+    .i {
         font-size: 1.3rem;
     }
 

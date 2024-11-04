@@ -1,7 +1,7 @@
-const botonIzquierda = document.querySelector(".botonIzquierda"),
-    botonDerecha = document.querySelector(".botonDerecha"),
-    slider = document.querySelector("#slider"),
-    carruselSection = document.querySelectorAll(".carruselSection");
+const botonIzquierda = document.querySelector(".botonIzquierda")
+const botonDerecha = document.querySelector(".botonDerecha")
+const slider = document.querySelector("#slider")
+const carruselSection = document.querySelectorAll(".carruselSection")
 
    
 

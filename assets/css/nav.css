@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
     user-select: none;
 }
 
@@ -99,9 +98,17 @@ element.style {
     margin-top: 1rem;
 }
 
+.contactameMovil {
+    display: none;
+    height: 7rem;
+    width: auto;
+    margin-top: 1rem;
+}
+
 .miCuenta {
     visibility: hidden;
 }
+
 
 /*sublistas*/
 .header nav ul li {
@@ -174,6 +181,11 @@ a {
         display: none;
     }
 
+    .contactameMovil {
+        display: block;
+        margin-left: 3.5rem;
+        margin-top: 3rem;
+    }
     .conejoCuenta {
         display: none;
     }

@@ -8,7 +8,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
     border: 0rem;
     scroll-behavior: smooth;
 }
@@ -20,10 +19,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-   
 }
 
 /*Home*/
+
+a{
+    color: black;
+}
 
 .tablaSection{
     display: flex;
