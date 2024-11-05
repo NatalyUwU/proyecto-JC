@@ -48,7 +48,6 @@
 
 .rotar {
     transform: rotate(360deg);
-    /* Aplica la rotación completa */
 }
 
 
@@ -107,6 +106,8 @@
 }
 
 @media (max-width: 500px) {
+
+    /*Carrusel tratamientos Capilares*/
     .contenedorCarrusel2 {
         height: 48rem;
         padding-top: 8rem;

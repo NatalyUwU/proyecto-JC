@@ -44,7 +44,6 @@ a{
    top: 35%;
 }
 
-
 .img1{
      transition: 1s ease;
 }
@@ -53,6 +52,12 @@ a{
     transition: 1s ease;
 }
 
+.img3 {
+    opacity: 0;
+    transform: scale(0); /* Inicia "oculto" y pequeño */
+    transition: transform 1s ease, opacity 0.5s ease;
+    transition-delay: 1s;
+}
 
 .mostrar:hover .img1 {
     opacity: 0;
@@ -60,14 +65,6 @@ a{
 
 .mostrar:hover .img2{
     opacity: 1;
-}
-
-
-.img3 {
-    opacity: 0;
-    transform: scale(0); /* Inicia "oculto" y pequeño */
-    transition: transform 1s ease, opacity 0.5s ease;
-    transition-delay: 1s;
 }
 
 .mostrar:hover .img3 {
