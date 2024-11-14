@@ -18,63 +18,64 @@
 </head>
 
 <body>
-   
-   <!--==================== HEADER ====================-->
-   <header class="header">
-    <div class="logo">
-        <a href="index.html" id="rLogo"><img src="image/logoRococoquette.png" alt="logo rococoquette"></a>
-    </div>
 
-    <div>
-        <i class="ri-menu-line" id="abrir"></i>
-    </div>
+    <!--==================== HEADER ====================-->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" id="rLogo"><img src="image/logoRococoquette.png" alt="logo rococoquette"></a>
+        </div>
 
-    <nav class="banner" id="nav">
-        <!--Servicios===-->
-        <i class="ri-close-fill" id="cerrar"></i>
+        <div>
+            <i class="ri-menu-line" id="abrir"></i>
+        </div>
 
-        <ul class="lista" id="listaServicios">
-            <a id="despliegueServicios" class="servicios">Servicios</a>
-            <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
-            <!--sublista===-->
-            <li><a href="peluqueria.html">Peluqueria</a></li>
-            <li><a href="faciales.html">Faciales</a></li>
-        </ul>
+        <nav class="banner" id="nav">
+            <!--Servicios===-->
+            <i class="ri-close-fill" id="cerrar"></i>
 
-        <!--Autocuidado===-->
-        <ul class="lista" id="listaAutocuidado">
-            <a href="autocuidado.html" id="despliegueAutocuidado">Autocuidado</a>
-            <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
-            <!--sublista===-->
-            <li><a href="#">Facial</a></li>
-            <li><a href="#">Capilar </a></li>
-        </ul>
+            <ul class="lista" id="listaServicios">
+                <a id="despliegueServicios" class="servicios">Servicios</a>
+                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
+                <!--sublista===-->
+                <li><a href="peluqueria.html">Peluqueria</a></li>
+                <li><a href="faciales.html">Faciales</a></li>
+            </ul>
 
-        <!--sobre la empresa===-->
-        <ul class="lista">
-            <a href="http://127.0.0.1:5500/index.html#contenedorCarrusel1">Sobre Nosotros</a>
-            <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
-        </ul>
+            <!--Autocuidado===-->
+            <ul class="lista" id="listaAutocuidado">
+                <a href="autocuidado.html" id="despliegueAutocuidado">Autocuidado</a>
+                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
+                <!--sublista===-->
+                <li><a href="#">Facial</a></li>
+                <li><a href="#">Capilar </a></li>
+            </ul>
 
-        <!--Reseñas===-->
-        <ul class="lista" id="listaReseñas">
-            <a href="http://127.0.0.1:5500/index.html#reseñas">Reseñas</a>
-            <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
-        </ul>
-        <!--Contacto===-->
-        <a href="#piePagina"><img src="image/contactame.jpg" class="contactame" alt=""></a>
-        <a href="#piePagina"><img src="image/contactameMovil.png" class="contactameMovil" alt=""></a>
-        
-    </nav>
-    <!--mi cuenta===-->
-    <div class="cuenta">
-        <img src="image/conejo.png" class="conejoCuenta" alt="imagen conejo">
-        <a href="login.html " target="_blank" class="iniciarSesion">Iniciar&nbsp;sesión&nbsp;/</a>
-        <a href="registro.html" target="_blank" class="registrarse">Registrarse</a><br>
-        <a href="" class="miCuenta">mi cuenta</a>
-    </div>
+            <!--sobre la empresa===-->
+            <ul class="lista">
+                <a href="http://127.0.0.1:5500/index.html#contenedorCarrusel1">Sobre Nosotros</a>
+                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
+            </ul>
 
-</header>
+            <!--Reseñas===-->
+            <ul class="lista" id="listaReseñas">
+                <a href="http://127.0.0.1:5500/index.html#reseñas">Reseñas</a>
+                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="">
+            </ul>
+            <!--Contacto===-->
+            <a href="#piePagina"><img src="image/contactame.jpg" class="contactame" alt=""></a>
+            <a href="#piePagina"><img src="image/contactameMovil.png" class="contactameMovil" alt=""></a>
+
+        </nav>
+         <!--mi cuenta===-->
+         <div class="cuenta">
+            <img src="image/conejo.png" class="conejoCuenta" alt="imagen conejo">
+            <a href="login.html " target="_blank" class="iniciarSesion" id="loginLink">Iniciar&nbsp;sesión&nbsp;/</a>
+            <a href="registro.html" target="_blank" class="registrarse" id="registroLink">Registrarse</a><br>
+            <p id="mensajeBienvenida" class="mensajeBienvenida"></p>
+            <p id="miCuenta" class="miCuenta">Cerrar Sesion</p>
+        </div>
+
+    </header>
 
 
 
@@ -103,7 +104,8 @@
         </div>
         <div>
             <h2><a class="cepillado" href="#contenedorCarrusel3">Cepillado</a></h2>
-            <a href="#contenedorCarrusel3" class="txCepillado">Utilizamos técnicas especializadas y herramientas de alta calidad para
+            <a href="#contenedorCarrusel3" class="txCepillado">Utilizamos técnicas especializadas y herramientas de alta
+                calidad para
                 estilizar
                 tu cabello, logrando un acabado brillante y sedoso que se adapte a tu estilo.</a>
         </div>
@@ -282,7 +284,7 @@
 
     <!--==================== PIE DE PAGINA ====================-->
 
-    <footer  id="piePagina" class="piePagina">
+    <footer id="piePagina" class="piePagina">
         <div class="piePagHorizontal">
             <div class="logoPie">
                 <a href="index.html"><img src="image/logoRococoquette.png" alt="logo rococoquette"></a>
@@ -320,15 +322,13 @@
 
 
 
-   
+
     <script src="js/carruselSobreLaEmpresa.js"></script>
     <script src="js/menuHamburguesaIndez.js"></script>
     <script src="js/carruselPeinados.js"></script>
     <script src="js/carruselCepillados.js"></script>
     <script src="js/carruselTCapilares.js"></script>
-   
-
-
+    <script src="js/saludarUsuario.js"></script>
 
 </body>
 

@@ -16,43 +16,45 @@
         <h1>CREA UNA CUENTA EN <br> ROCOCOQUETTE</h1>
     </main>
 
-    <form>
+    <form class="formularioRegistro" id="formularioRegistro">
         <div class="nombres">
             <label for="nombre">Nombres:</label>
-            <input type="text" name="nombre" class="inputRegistro"  placeholder="Ingresa tus nombres aqui" required><br><br>
+            <input type="text" name="nombre" id="nombre" class="inputRegistro" placeholder="Ingresa tus nombres aqui"
+                required><br><br>
         </div>
         <div class="apellidos">
             <label for="apellidos">Apellidos:</label>
-            <input type="text" name="apellidos" class="inputRegistro" placeholder="Ingresa tus apellidos aqui" required><br><br>
+            <input type="text" name="apellidos" id="apellidos" class="inputRegistro"
+                placeholder="Ingresa tus apellidos aqui" required><br><br>
         </div>
         <div class="correo">
             <label for="correo">Correo electrónico:</label>
-            <input type="email" name="correo" class="inputRegistro" placeholder="Ingresa tu correo aqui" required><br><br>
+            <input type="email" name="correo" id="correo" class="inputRegistro" placeholder="Ingresa tu correo aqui"
+                required><br><br>
         </div>
         <div class="contraseña">
             <label for="contra">Contraseña:</label>
-            <input type="password" name="contra" class="inputRegistro" placeholder="Ingresa tu contraseña aqui" required><br><br>
+            <input type="password" name="contra" id="contra" class="inputRegistro"
+                placeholder="Ingresa tu contraseña aqui" required><br><br>
         </div>
         <div class="genero">
             <label>Género:&nbsp;&nbsp;</label>
 
             <label for="masculino">Masculino</label>
-            <input type="radio" name="genero" class="inputRegistro"  value="masculino" id="masculino">
+            <input type="radio" name="genero" class="inputRegistro" value="masculino" id="masculino">
 
             <label for="femenino">&nbsp;&nbsp;Femenino</label>
-            <input type="radio" name="genero" class="inputRegistro"  value="femenino" id="femenino">
+            <input type="radio" name="genero" class="inputRegistro" value="femenino" id="femenino">
 
             <label for="otro">&nbsp;&nbsp;Otro</label>
-            <input type="radio" name="genero" class="inputRegistro"  value="otro" id="otro"><br><br>
+            <input type="radio" name="genero" class="inputRegistro" value="otro" id="otro"><br><br>
         </div>
-        <input type="submit" class="boton" value="CREAR">
+        <div class="boton">
+            <button type="submit" class="botontxt">CREAR</button>
+        </div>
     </form>
 
-    
-
-
-
-
+    <script src="js/localStorageRegistro.js"></script>
 </body>
 
 </html>
