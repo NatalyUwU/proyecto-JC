@@ -33,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    visibility: hidden;
 }
 .dudasConsejos a{
     background-color: white;

@@ -88,8 +88,8 @@
 
     <!--==================== CONSEJOS ====================-->
     <section class="consejos">
-        <div class="dudasConsejos">
-            <a href="https://wa.me/573218305094" target="_blank">¿Tienes alguna duda o te gustaría saber más sobre algún
+        <div class="dudasConsejos" id="dudasConsejos">
+            <a href="mailto:lauritatelle.03@gmail.com?subject=Pregunta%20sobre%20autocuidado" target="_blank">¿Tienes alguna duda o te gustaría saber más sobre algún
                 tema? <strong>¡Déjanos tu pregunta
                     aquí!</strong></a>
             <img src="image/liston.png" alt="">
@@ -187,10 +187,10 @@
             <div class="Suscribete">
                 <h4>ÚNETE</h4>
                 <p>Suscribete para recibir información sobre <br>nuevos productos, servicios y ofertas</p>
-                <div class="form">
-                    <input type="email" placeholder="Ingresa tu correo" class="inputPiePag" required>
+                <form class="form" id="formSuscribirse">
+                    <input type="email" placeholder="Ingresa tu correo" class="inputPiePag"  id="correoSuscribirse"  required>
                     <button type="submit" class="buttonPiePag">Suscribirse</button>
-                </div>
+                </form> 
             </div>
         </div>
         <div class="derechos">
@@ -200,6 +200,7 @@
 
     <script src="js/menuHamburguesaIndez.js"></script>
     <script src="js/saludarUsuario.js"></script>
+    <script src="js/suscribirsePiePag.js"></script>
 
 </body>
 

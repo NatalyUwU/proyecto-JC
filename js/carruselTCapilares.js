@@ -8,70 +8,82 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    botonIzquierda2.addEventListener("click", e => moverIzquierda())
-    botonDerecha2.addEventListener("click", e => moverDerecha())
-
     let operacion = 0;
-    let anchoImagen = 100 / carruselSection2.length;
+    let anchoImagen = 100 / carruselSection2.length; // calcular el ancho de cada imagen para que se vea cada una de las imagenes
     let posicion = 0;
-    function moverDerecha() {
+
+    //Funcion para mover a la derecha
+    botonDerecha2.addEventListener("click", function () {
+
         // Detecta pantalla pequeña
         if (window.innerWidth <= 480) {
+            //si estamos en la ultima imagen y volvemos a dar click hacia la derecha nos devolvera a la primera imagen
             if (posicion >= carruselSection2.length - 1) {
                 operacion = 0;
                 posicion = 0;
                 slider2.style.transform = `translate(-${operacion}%)`;
+
+             //la posicion se aumentera de 1 en 1, a la operacion se le suma el ancho de cada imagen para que se muestre una por una al dar click, mientras la posicion sea menor el total de las imagenes
             } else {
                 posicion++;
-                operacion += anchoImagen;
+                operacion = operacion + anchoImagen;
                 slider2.style.transform = `translate(-${operacion}%)`;
                 slider2.style.transition = "all ease .6s";
             }
         }
         // Detecta pantallas grandes
         else
+            //si estamos en la ultima imagen y volvemos a dar click hacia la derecha nos devolvera a la primera imagen
             if (posicion >= carruselSection2.length - 2) {
                 operacion = 0;
                 posicion = 0;
                 slider2.style.transform = `translate(-${operacion}%)`;
+                //la posicion se aumentera de 1 en 1, a la operacion se le suma el ancho de cada imagen para que se muestre una por una al dar click, mientras la posicion sea menor al total de las imagenes
             } else {
                 posicion++;
-                operacion += anchoImagen;
+                operacion = operacion + anchoImagen;
                 slider2.style.transform = `translate(-${operacion}%)`;
                 slider2.style.transition = "all ease .6s";
             }
-    }
+    });
 
-    function moverIzquierda() {
-        // Pantallas pequeñas (480px o menos)
+
+    
+    botonIzquierda2.addEventListener("click", function () {
+        // Pantallas pequeñas 
         if (window.innerWidth <= 480) {
             posicion--;
+            //si estamos en la primera imagen y volvemos a dar click hacia la izquierda nos devolvera a la ultima imagen
             if (posicion < 0) {
-                posicion = carruselSection2.length - 1;
-                operacion = anchoImagen * (carruselSection2.length - 1);
+                posicion = carruselSection2.length - 1; //posicion tiene el valor de la ultima imagen 
+                operacion = anchoImagen * (carruselSection2.length - 1); //operacion calcula cual es el porcentaje al que equivale esa ultima imagen para despues desplazarlo hasta haya
                 slider2.style.transform = `translate(-${operacion}%)`;
+
+                 //calcula a que porcetaje se debe desplazar 
             } else {
-                posicion--;
-                operacion = anchoImagen * posicion; 
-                slider2.style.transform = `translate(-${operacion}%)`;
-                slider2.style.transition = "all ease .6s";
-            }
-        }
-        // Pantallas más grandes
-        else {
-            posicion--;
-            if (posicion < 0) {
-                posicion = carruselSection2.length - 2;
-                operacion = anchoImagen * (carruselSection2.length - 2);
-                slider2.style.transform = `translate(-${operacion}%)`;
-            } else {
-                posicion--;
                 operacion = anchoImagen * posicion;
                 slider2.style.transform = `translate(-${operacion}%)`;
                 slider2.style.transition = "all ease .6s";
             }
         }
-    }
+
+          // Pantallas más grandes
+          else {
+            posicion--;
+            //si estamos en la primera imagen y damo click a la izquierda nos manda a la ultima imagen
+            if (posicion < 0) {
+                posicion = carruselSection2.length - 2;
+                operacion = anchoImagen * (carruselSection2.length - 2);
+                slider2.style.transform = `translate(-${operacion}%)`;
+
+                //calcula a que porcetaje se debe desplazar 
+            } else {
+                operacion = anchoImagen * posicion;
+                slider2.style.transform = `translate(-${operacion}%)`;
+                slider2.style.transition = "all ease .6s";
+            }
+        }
+    });
 });
 
 //mostrar elementos carrusel
@@ -148,81 +160,81 @@ IconoGraso.addEventListener('click', function () {
 });
 
 
-    // Función para mostrar cabello seco
-    IconoSeco.addEventListener('click', function () {
-        // cabello seco
-        carrusel2Tcapilares1.style.display = 'block';
-        carrusel2Tcapilares2.style.display = 'block';
-        carrusel2Tcapilares3.style.display = 'block';
+// Función para mostrar cabello seco
+IconoSeco.addEventListener('click', function () {
+    // cabello seco
+    carrusel2Tcapilares1.style.display = 'block';
+    carrusel2Tcapilares2.style.display = 'block';
+    carrusel2Tcapilares3.style.display = 'block';
 
-        //cabello graso
-        carrusel1Tcapilares1.style.display = 'none';
-        carrusel1Tcapilares2.style.display = 'none';
-        carrusel1Tcapilares3.style.display = 'none';
+    //cabello graso
+    carrusel1Tcapilares1.style.display = 'none';
+    carrusel1Tcapilares2.style.display = 'none';
+    carrusel1Tcapilares3.style.display = 'none';
 
-        //Repolarizacion
-        carrusel3Tcapilares1.style.display = 'none';
-        carrusel3Tcapilares2.style.display = 'none';
-        carrusel3Tcapilares3.style.display = 'none';
+    //Repolarizacion
+    carrusel3Tcapilares1.style.display = 'none';
+    carrusel3Tcapilares2.style.display = 'none';
+    carrusel3Tcapilares3.style.display = 'none';
 
-        // ampolletas
-        carrusel1Tcapilares4.style.display = 'block';
-        carrusel1Tcapilares5.style.display = 'block';
-        carrusel1Tcapilares6.style.display = 'block';
+    // ampolletas
+    carrusel1Tcapilares4.style.display = 'block';
+    carrusel1Tcapilares5.style.display = 'block';
+    carrusel1Tcapilares6.style.display = 'block';
 
-        //animacion icono
-        iconos2.forEach(function (elemento) {
-            elemento.style.border = 'none';
-            elemento.style.boxShadow = 'none';
-        });
-
-        iconoC2.classList.add('rotar');
-        iconoC2.style.border = '2px solid pink';
-        iconoC2.style.borderRadius = '50%';
-        iconoC2.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.5)';
-
-
-        setTimeout(function () {
-            iconoC2.classList.remove('rotar');
-        }, 280);
+    //animacion icono
+    iconos2.forEach(function (elemento) {
+        elemento.style.border = 'none';
+        elemento.style.boxShadow = 'none';
     });
 
-    // Función para mostrar repolarizacion
-    Repolarizacion.addEventListener('click', function () {
-        
-        //Repolarizacion
-        carrusel3Tcapilares1.style.display = 'block';
-        carrusel3Tcapilares2.style.display = 'block';
-        carrusel3Tcapilares3.style.display = 'block';
+    iconoC2.classList.add('rotar');
+    iconoC2.style.border = '2px solid pink';
+    iconoC2.style.borderRadius = '50%';
+    iconoC2.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.5)';
 
-        // cabello seco
-        carrusel2Tcapilares1.style.display = 'none';
-        carrusel2Tcapilares2.style.display = 'none';
-        carrusel2Tcapilares3.style.display = 'none';
 
-        //cabello graso
-        carrusel1Tcapilares1.style.display = 'none';
-        carrusel1Tcapilares2.style.display = 'none';
-        carrusel1Tcapilares3.style.display = 'none';
+    setTimeout(function () {
+        iconoC2.classList.remove('rotar');
+    }, 280);
+});
 
-        // ampolletas
-        carrusel1Tcapilares4.style.display = 'block';
-        carrusel1Tcapilares5.style.display = 'block';
-        carrusel1Tcapilares6.style.display = 'block';
+// Función para mostrar repolarizacion
+Repolarizacion.addEventListener('click', function () {
 
-        //animacion icono
-        iconos2.forEach(function (elemento) {
-            elemento.style.border = 'none';
-            elemento.style.boxShadow = 'none';
-        });
+    //Repolarizacion
+    carrusel3Tcapilares1.style.display = 'block';
+    carrusel3Tcapilares2.style.display = 'block';
+    carrusel3Tcapilares3.style.display = 'block';
 
-        iconoC3.classList.add('rotar');
-        iconoC3.style.border = '2px solid pink';
-        iconoC3.style.borderRadius = '50%';
-        iconoC3.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.5)';
+    // cabello seco
+    carrusel2Tcapilares1.style.display = 'none';
+    carrusel2Tcapilares2.style.display = 'none';
+    carrusel2Tcapilares3.style.display = 'none';
 
-        setTimeout(function () {
-            iconoC3.classList.remove('rotar');
-        }, 280);
+    //cabello graso
+    carrusel1Tcapilares1.style.display = 'none';
+    carrusel1Tcapilares2.style.display = 'none';
+    carrusel1Tcapilares3.style.display = 'none';
 
+    // ampolletas
+    carrusel1Tcapilares4.style.display = 'block';
+    carrusel1Tcapilares5.style.display = 'block';
+    carrusel1Tcapilares6.style.display = 'block';
+
+    //animacion icono
+    iconos2.forEach(function (elemento) {
+        elemento.style.border = 'none';
+        elemento.style.boxShadow = 'none';
     });
+
+    iconoC3.classList.add('rotar');
+    iconoC3.style.border = '2px solid pink';
+    iconoC3.style.borderRadius = '50%';
+    iconoC3.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.5)';
+
+    setTimeout(function () {
+        iconoC3.classList.remove('rotar');
+    }, 280);
+
+});

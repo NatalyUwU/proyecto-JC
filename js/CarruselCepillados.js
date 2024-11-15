@@ -6,52 +6,58 @@ document.addEventListener('DOMContentLoaded', function () {
         carruselSection3 = document.querySelectorAll(".carruselSection3");
 
 
-
-
-    botonIzquierda3.addEventListener("click", e => moverIzquierda())
-    botonDerecha3.addEventListener("click", e => moverDerecha())
-
     let operacion = 0;
-    let anchoImagen = 100 / carruselSection3.length;
+    let anchoImagen = 100 / carruselSection3.length; // calcular el ancho de cada imagen para que se vea cada una de las imagenes
     let posicion = 0;
-    function moverDerecha() {
+
+    //Funcion para mover a la derecha
+    botonDerecha3.addEventListener("click", function () {
+
         // Detecta pantalla pequeña
         if (window.innerWidth <= 480) {
+            //si estamos en la ultima imagen y volvemos a dar click hacia la derecha nos devolvera a la primera imagen
             if (posicion >= carruselSection3.length - 1) {
                 operacion = 0;
                 posicion = 0;
                 slider3.style.transform = `translate(-${operacion}%)`;
+
+                //la posicion se aumentera de 1 en 1, a la operacion se le suma el ancho de cada imagen para que se muestre una por una al dar click, mientras la posicion sea menor el total de las imagenes
             } else {
                 posicion++;
-                operacion += anchoImagen;
+                operacion = operacion + anchoImagen;
                 slider3.style.transform = `translate(-${operacion}%)`;
                 slider3.style.transition = "all ease .6s";
             }
         }
         // Detecta pantallas grandes
         else
+            //si estamos en la ultima imagen y volvemos a dar click hacia la derecha nos devolvera a la primera imagen
             if (posicion >= carruselSection3.length - 2) {
                 operacion = 0;
                 posicion = 0;
                 slider3.style.transform = `translate(-${operacion}%)`;
+                //la posicion se aumentera de 1 en 1, a la operacion se le suma el ancho de cada imagen para que se muestre una por una al dar click, mientras la posicion sea menor al total de las imagenes
             } else {
                 posicion++;
-                operacion += anchoImagen;
+                operacion = operacion + anchoImagen;
                 slider3.style.transform = `translate(-${operacion}%)`;
                 slider3.style.transition = "all ease .6s";
             }
-    }
+    });
 
-    function moverIzquierda() {
+
+    botonIzquierda3.addEventListener("click", function () {
         // Pantallas pequeñas (480px o menos)
         if (window.innerWidth <= 480) {
             posicion--;
+            //si estamos en la primera imagen y volvemos a dar click hacia la izquierda nos devolvera a la ultima imagen
             if (posicion < 0) {
-                posicion = carruselSection3.length - 1;
-                operacion = anchoImagen * (carruselSection3.length - 1);
+                posicion = carruselSection3.length - 1; //posicion tiene el valor de la ultima imagen 
+                operacion = anchoImagen * (carruselSection3.length - 1); //operacion calcula cual es el porcentaje al que equivale esa ultima imagen para despues desplazarlo hasta haya
                 slider3.style.transform = `translate(-${operacion}%)`;
+
+                //calcula a que porcetaje se debe desplazar 
             } else {
-                posicion--;
                 operacion = anchoImagen * posicion;
                 slider3.style.transform = `translate(-${operacion}%)`;
                 slider3.style.transition = "all ease .6s";
@@ -60,18 +66,20 @@ document.addEventListener('DOMContentLoaded', function () {
         // Pantallas más grandes
         else {
             posicion--;
+            //si estamos en la primera imagen y damo click a la izquierda nos manda a la ultima imagen
             if (posicion < 0) {
                 posicion = carruselSection3.length - 2;
                 operacion = anchoImagen * (carruselSection3.length - 2);
                 slider3.style.transform = `translate(-${operacion}%)`;
+
+                //calcula a que porcetaje se debe desplazar 
             } else {
-                posicion--;
                 operacion = anchoImagen * posicion;
                 slider3.style.transform = `translate(-${operacion}%)`;
                 slider3.style.transition = "all ease .6s";
             }
         }
-    }
+    });
 });
 
 //mostrar elementos carrusel

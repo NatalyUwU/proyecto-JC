@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const nombreUsuario = localStorage.getItem("nombreUsuario");
     const miCuenta = document.getElementById("miCuenta");
     const mensajeBienvenida = document.getElementById("mensajeBienvenida");
+    const dudasConsejos = document.getElementById("dudasConsejos");
 
+    //saludar si el usuario tiene nombre
     if (nombreUsuario) {
         document.getElementById("mensajeBienvenida").innerHTML = `¡Bienvenidx ${nombreUsuario}, <br> a nuestro espacio de bienestar!`;
 
@@ -12,14 +14,17 @@ document.addEventListener('DOMContentLoaded', function () {
         cuentaLinks.forEach(link => {
             link.style.display = 'none';
         });
+
         // Muestra mensaje bienvenida y cerrar sesion
         miCuenta.style.display = 'block';
         mensajeBienvenida.style.display = 'block';
+        // Muestra seccion para dejar preguntas de autocuidado
+        dudasConsejos.style.visibility = 'visible';
 
-        // cerrar sesion
+        // funcion para cerrar sesion
         miCuenta.addEventListener("click", function () {
-            // Limpiar el localStorage para cerrar sesión
-            localStorage.removeItem("nombreUsuario");
+            // Limpiar el localStorage 
+            localStorage.clear();
 
             // Volver a mostrar los enlaces de "Iniciar sesión" y "Registrarse"
             cuentaLinks.forEach(link => {
@@ -28,10 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
             //Oculta mensaje bienvenida y cerrar sesion
             miCuenta.style.display = 'none';
             mensajeBienvenida.style.display = 'none';
+            // Oculta seccion para dejar preguntas de autocuidado
+            dudasConsejos.style.visibility = 'hidden';
         });
 
+        // Mensaje si el usuario no tiene nombre
     } else {
-        // Si no hay usuario logueado, mostrar mensaje estándar
         document.getElementById("mensajeBienvenida").textContent = "¡Bienvenidx a nuestro espacio de bienestar!";
     }
 });
