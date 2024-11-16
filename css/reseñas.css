@@ -118,6 +118,7 @@
 
 
 
+
 @media (max-width: 674px) {
     .reseñas {
         margin-bottom: 9rem;
@@ -180,6 +181,7 @@
 
     /*estrellas*/
     .estrellas {
+        display: flex;
         height: 2.5rem;
         margin-bottom: 0rem;
         margin-top: 0rem;
@@ -190,8 +192,5 @@
         font-size: 1.3rem;
     }
 
-    .agrupEstrelBoton {
-        display: flex;
-    }
 
 }

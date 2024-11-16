@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const formularioLogin = document.getElementById("formularioLogin");
+    const miCuenta = document.getElementById("miCuenta");
+
 
     //funcion subir a localStorage al hacer click en el boton type submit
     formularioLogin.addEventListener("submit", function (event) {
@@ -14,12 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //Compara si valor del input login es igual al valor del localStorage, ademas guarda el nombre que ingreso el usuario y redirige a la pestaña de index
         if (usuarioRegistrado.correo === correoLogin && usuarioRegistrado.contra === contraLogin) {
+            localStorage.setItem("sesionActiva", "true");
             localStorage.setItem("nombreUsuario", usuarioRegistrado.nombre);
             window.location.href = "index.html";
         } else {
-            alert("Correo o contraseña incorrectos.");
+            alert("¡Oops! 😅 Parece que el correo o la contraseña no coinciden. Intentalo de nuevo");
         }
     });
-});
 
+});
 

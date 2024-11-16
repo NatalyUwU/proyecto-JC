@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCOCOQUETTE</title>
-    <link rel="stylesheet" href="css/index.css"> 
+    <link rel="stylesheet" href="css/index.css">
     <!--==================== google fonts ====================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +74,7 @@
             <!--Contacto===-->
             <a href="#piePagina"><img src="image/contactame.jpg" class="contactame" alt=""></a>
             <a href="#piePagina"><img src="image/contactameMovil.png" class="contactameMovil" alt=""></a>
-            
+
         </nav>
         <!--mi cuenta===-->
         <div class="cuenta">
@@ -133,37 +133,37 @@
                 <input class="itemReseñasFormulario" type="text" name="nombre" id="nombre"
                     placeholder="Escribe tu nombre aqui" required>
 
-                <label class="itemReseñasFormulario" for="servicios">Servicio:</label>
-                <input class="itemReseñasFormulario" type="text" name="servicios" id="servicio"
+                <label class="itemReseñasFormulario" for="servicio">Servicio:</label>
+                <input class="itemReseñasFormulario" type="text" name="servicio" id="servicio"
                     placeholder="Escribe el servicio que recibiste aqui " required>
 
                 <label class="itemReseñasFormulario" for="comentario">Comentario:</label>
                 <textarea class="itemReseñasFormulario" id="comentario" name="comentario"
                     placeholder="Escribe tu comentario aqui" required></textarea>
-                <div class="agrupEstrelBoton">
-                    <div class="estrellas" id="estrellas">
-                        <input type="radio" id="estrella1" name="estrellas" value="1">
-                        <label id="colorEstrella1" for="estrella1"><i class="fa-solid fa-star"></i></label>
 
-                        <input type="radio" id="estrella2" name="estrellas" value="2">
-                        <label id="colorEstrella2" for="estrella2"><i class="fa-solid fa-star"></i></label>
+                <div class="estrellas" id="estrellas" >
+                    <input type="radio" id="estrella1" name="estrellas" value="1" >
+                    <label id="colorEstrella1" for="estrella1"><i class="fa-solid fa-star"></i></label>
 
-                        <input type="radio" id="estrella3" name="estrellas" value="3">
-                        <label id="colorEstrella3" for="estrella3"><i class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="estrella2" name="estrellas" value="2">
+                    <label id="colorEstrella2" for="estrella2"><i class="fa-solid fa-star"></i></label>
 
-                        <input type="radio" id="estrella4" name="estrellas" value="4">
-                        <label id="colorEstrella4" for="estrella4"><i class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="estrella3" name="estrellas" value="3">
+                    <label id="colorEstrella3" for="estrella3"><i class="fa-solid fa-star"></i></label>
 
-                        <input type="radio" id="estrella5" name="estrellas" value="5">
-                        <label id="colorEstrella5" for="estrella5"><i class="fa-solid fa-star"></i></label>
-                    </div>
-                    <button class="itemReseñasFormulario" type="submit">Enviar reseña</button>
+                    <input type="radio" id="estrella4" name="estrellas" value="4">
+                    <label id="colorEstrella4" for="estrella4"><i class="fa-solid fa-star"></i></label>
+
+                    <input type="radio" id="estrella5" name="estrellas" value="5">
+                    <label id="colorEstrella5" for="estrella5"><i class="fa-solid fa-star"></i></label>
                 </div>
+                
+                <button class="itemReseñasFormulario" type="submit">Enviar reseña</button>
             </form>
         </div>
 
         <!--==================== RESEÑAS CREADAS ====================-->
-        <div><img src="image/reseña1.png" class="itemReseñas"  alt=""></div>
+        <div><img src="image/reseña1.png" class="itemReseñas" alt=""></div>
         <div><img src="image/reseña2.png" class="itemReseñas" alt=""></div>
         <div><img src="image/reseña3.png" class="itemReseñas" alt=""></div>
         <div><img src="image/reseña4.png" class="itemReseñas" alt=""></div>
@@ -173,7 +173,7 @@
 
     <!--==================== PIE DE PAGINA ====================-->
 
-    <footer  id="piePagina" class="piePagina">
+    <footer id="piePagina" class="piePagina">
         <div class="piePagHorizontal">
             <div class="logoPie">
                 <a href="index.html"><img src="image/logoRococoquette.png" alt="logo rococoquette"></a>
@@ -199,9 +199,10 @@
                 <h4>ÚNETE</h4>
                 <p>Suscribete para recibir información sobre <br>nuevos productos, servicios y ofertas</p>
                 <form class="form" id="formSuscribirse">
-                    <input type="email" placeholder="Ingresa tu correo" class="inputPiePag"  id="correoSuscribirse"  required>
+                    <input type="email" placeholder="Ingresa tu correo" class="inputPiePag" id="correoSuscribirse"
+                        required>
                     <button type="submit" class="buttonPiePag">Suscribirse</button>
-                </form> 
+                </form>
             </div>
         </div>
         <div class="derechos">
@@ -214,7 +215,10 @@
     <script src="js/estrellasReseñas.js"></script>
     <script src="js/reseñas.js"></script>
     <script src="js/saludarUsuario.js"></script>
-    <script src="js/suscribirsePiePag.js"></script>
+    <script src="js/localStorageSuscribirse.js"></script>
+    <script src="js/localStorageReseñas.js"></script>
+    <script src="js/cerrarSesion.js"></script>
+
 </body>
 
 </html>

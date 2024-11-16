@@ -21,6 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     
 
-//lauritatelle.03@gmail.com
 
 

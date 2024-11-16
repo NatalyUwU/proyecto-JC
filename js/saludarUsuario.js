@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nombreUsuario = localStorage.getItem("nombreUsuario");
     const miCuenta = document.getElementById("miCuenta");
     const mensajeBienvenida = document.getElementById("mensajeBienvenida");
-    const dudasConsejos = document.getElementById("dudasConsejos");
+ 
 
     //saludar si el usuario tiene nombre
     if (nombreUsuario) {
@@ -18,13 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // Muestra mensaje bienvenida y cerrar sesion
         miCuenta.style.display = 'block';
         mensajeBienvenida.style.display = 'block';
-        // Muestra seccion para dejar preguntas de autocuidado
-        dudasConsejos.style.visibility = 'visible';
+     
 
         // funcion para cerrar sesion
         miCuenta.addEventListener("click", function () {
-            // Limpiar el localStorage 
-            localStorage.clear();
 
             // Volver a mostrar los enlaces de "Iniciar sesión" y "Registrarse"
             cuentaLinks.forEach(link => {
@@ -33,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //Oculta mensaje bienvenida y cerrar sesion
             miCuenta.style.display = 'none';
             mensajeBienvenida.style.display = 'none';
-            // Oculta seccion para dejar preguntas de autocuidado
-            dudasConsejos.style.visibility = 'hidden';
+    
         });
 
         // Mensaje si el usuario no tiene nombre
