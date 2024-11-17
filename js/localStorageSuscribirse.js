@@ -1,25 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
-        const formSuscribirse = document.getElementById("formSuscribirse");
+
+    const formSuscribirse = document.getElementById("formSuscribirse");
+
+    // Función para subir a localStorage al hacer click en el botón type submit
+    formSuscribirse.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Traerá el valor que llenó el usuario para cada requisito
+        const correoSuscribirse = document.getElementById("correoSuscribirse").value;
+
+        // Los datos se guardarán en un objeto
+        const correoSpan = {
+            correoSuscribirse: correoSuscribirse,
+        };
+
+        let correosSpans;
+
+        const correosSpansGuardados = localStorage.getItem("correosSpansGuardados");
     
-        //funcion subir a localStorage al hacer click en el boton type submit
-        formSuscribirse.addEventListener("submit", function (event) {
-            event.preventDefault();
+        if (correosSpansGuardados) {
+            // Si hay correos guardados, los convertimos en un array
+            correosSpans = JSON.parse(correosSpansGuardados);
+        } else {
+            // Si no hay correos guardados, inicializamos un array vacío
+            correosSpans = [];
+        }
     
-            // Traera el valor que lleno el usuario para cada requisito
-            const correoSuscribirse = document.getElementById("correoSuscribirse").value;
-        
-            // Los datos se guardaran en un objeto
-            const correosSpan = {
-                correoSuscribirse: correoSuscribirse,  
-            };
-    
-            // El objeto se guardara el LocalStorage como tipo cadena
-            localStorage.setItem("correosSpan", JSON.stringify(correosSpan));
-    
-        });
+        // Agregamos la nueva suscripción al array
+        correosSpans.push(correoSpan);  // Aquí agregamos el nuevo correo
+
+        // Guardar el array de correosSpans actualizado en el localStorage
+        localStorage.setItem("correosSpansGuardados", JSON.stringify(correosSpans));
+
+        // Limpiar formulario una vez se haya enviado la suscripción
+        formSuscribirse.reset();
+
     });
-    
+});
+
 
 
 

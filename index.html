@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCOCOQUETTE</title>
+     <!--==================== Css ====================-->
     <link rel="stylesheet" href="css/index.css">
     <!--==================== google fonts ====================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 
 <body>
@@ -119,6 +118,9 @@
         </div>
         <div class="botonIzquierda"><img src="image/flechasIconoIzquierda.png" alt=""></div>
         <div class="botonDerecha"><img src="image/flechasIconoDerecha.png" alt=""></div>
+
+        <!--==================== Contendeor puntos ====================-->
+        <div class="carruselIndicadores" id="indicadoresSobreLaEmpresa"></div>
     </section>
 
 
@@ -141,24 +143,26 @@
                 <textarea class="itemReseñasFormulario" id="comentario" name="comentario"
                     placeholder="Escribe tu comentario aqui" required></textarea>
 
-                <div class="estrellas" id="estrellas" >
-                    <input type="radio" id="estrella1" name="estrellas" value="1" >
-                    <label id="colorEstrella1" for="estrella1"><i class="fa-solid fa-star"></i></label>
+                <div class="posicionContenedor">  <!--==================== contendero para colocar el boton al lado de las estrellas====================-->
+                    <div class="estrellas" id="estrellas">
+                        <input type="radio" id="estrella1" name="estrellas" value="1">
+                        <label id="colorEstrella1" for="estrella1"><i class="fa-solid fa-star"></i></label>
 
-                    <input type="radio" id="estrella2" name="estrellas" value="2">
-                    <label id="colorEstrella2" for="estrella2"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="estrella2" name="estrellas" value="2">
+                        <label id="colorEstrella2" for="estrella2"><i class="fa-solid fa-star"></i></label>
 
-                    <input type="radio" id="estrella3" name="estrellas" value="3">
-                    <label id="colorEstrella3" for="estrella3"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="estrella3" name="estrellas" value="3">
+                        <label id="colorEstrella3" for="estrella3"><i class="fa-solid fa-star"></i></label>
 
-                    <input type="radio" id="estrella4" name="estrellas" value="4">
-                    <label id="colorEstrella4" for="estrella4"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="estrella4" name="estrellas" value="4">
+                        <label id="colorEstrella4" for="estrella4"><i class="fa-solid fa-star"></i></label>
 
-                    <input type="radio" id="estrella5" name="estrellas" value="5">
-                    <label id="colorEstrella5" for="estrella5"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="estrella5" name="estrellas" value="5">
+                        <label id="colorEstrella5" for="estrella5"><i class="fa-solid fa-star"></i></label>
+                    </div>
+
+                    <button class="itemReseñasFormulario" type="submit">Enviar reseña</button>
                 </div>
-                
-                <button class="itemReseñasFormulario" type="submit">Enviar reseña</button>
             </form>
         </div>
 

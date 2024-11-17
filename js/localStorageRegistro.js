@@ -21,10 +21,26 @@ document.addEventListener('DOMContentLoaded', function () {
             genero: genero
         };
 
-        // El objeto se guardara el LocalStorage como tipo cadena
-        localStorage.setItem("usuarioRegistrado", JSON.stringify(usuario));
+        // Obtener los usuarios registrados desde localStorage, o crear un array vacío si es el primer usuario
+        let usuarios;
 
-        // Se redirige al usuario a la pestaña de login
-        window.location.href = "login.html";
+        const usuariosGuardados = localStorage.getItem("usuariosRegistrados");
+        
+        if (usuariosGuardados) {
+            // Si hay usuarios guardados traemos el array
+            usuarios = JSON.parse(usuariosGuardados);
+        } else {
+            // Si no hay usuarios guardados creamos un array vacío
+            usuarios = [];
+        }
+
+           // Agregamos el nuevo usuario al array
+        usuarios.push(usuario);
+
+         // Guardar el array en el localStorage
+         localStorage.setItem("usuariosRegistrados", JSON.stringify(usuarios));
+
+         // Redirigir a la página de login
+         window.location.href = "login.html";
     });
 });

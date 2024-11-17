@@ -1,7 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const formularioReseña = document.getElementById("formularioReseña");
+
+
+    if (localStorage.getItem("sesionActiva") === "false") {
+        // Agregamos el eventListener para evitar que envíen la reseña si no están logueados
+        formularioReseña.addEventListener("click", function (event) {
+            // Si la sesión no está activa, mostramos el mensaje
+            alert("¡Hola! 😊 Para dejar tu reseña primero registrate e inicia sesión. ¡Es muy rápido!");
+            // Opcional: Evitar que el formulario se envíe si no está activo
+            event.preventDefault();
+        });
+    }
 
     if (localStorage.getItem("sesionActiva") === "true") {
-        const formularioReseña = document.getElementById("formularioReseña");
 
         // Codigo para enviar formulario
         formularioReseña.addEventListener("submit", function (event) {
@@ -29,21 +40,33 @@ document.addEventListener('DOMContentLoaded', function () {
                 calificacion: calificacion.value // Guardamos la calificación seleccionada
             };
 
-            // El objeto se guardara en el LocalStorage como tipo cadena
-            localStorage.setItem("reseña", JSON.stringify(reseña));
+
+            // Obtener los usuarios registrados desde localStorage, o crear un array vacío si es el primer usuario
+            let reseñas;
+
+            const reseñasGuardadas = localStorage.getItem("reseñasGuardadas");
+
+            if (reseñasGuardadas) {
+                // Si hay reseñas guardadas, las convertimos en un array
+                reseñas = JSON.parse(reseñasGuardadas);
+            } else {
+                // Si no hay reseñas guardadas, inicializamos un array vacío
+                reseñas = [];
+            }
+
+            // Agregamos la nueva reseña al array
+            reseñas.push(reseña);  // Aquí agregamos la nueva reseña, no reseñasGuardadas
+
+            // Guardar el array de reseñas actualizado en el localStorage
+            localStorage.setItem("reseñasGuardadas", JSON.stringify(reseñas));
 
             // Mensaje de agradecimiento
             alert("¡Gracias por tu reseña! 🌟\n\nTu opinión significa mucho para nosotros. ¡Nos ayuda a mejorar y ofrecerte servicios de excelencia! 😊");
 
-            //limpiar formulario una vez se haya enviado la reseña
-            formularioReseña.reset();
-        });
-
-    } else {
-
-        formularioReseña.addEventListener("click", function (event) {
-            // Si la sesión no está activa no dejara enviar la reseña y se mostrara este mensaje al usuario
-            alert("¡Hola! 😊 Para dejar tu reseña primero registrate e inicia sesión. ¡Es muy rápido!");
+            // Limpiar formulario una vez se haya enviado la reseña
+            location.reload();
         });
     }
+
+    
 });

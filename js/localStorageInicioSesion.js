@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const formularioLogin = document.getElementById("formularioLogin");
-    const miCuenta = document.getElementById("miCuenta");
 
 
     //funcion subir a localStorage al hacer click en el boton type submit
@@ -12,17 +11,43 @@ document.addEventListener('DOMContentLoaded', function () {
         const correoLogin = document.getElementById("correoLogin").value;
         const contraLogin = document.getElementById("contraLogin").value;
 
-        const usuarioRegistrado = JSON.parse(localStorage.getItem("usuarioRegistrado")); //Se desencripta el localStorage y se almacenan los valores en la constante para que quede como objeto nuevamente
 
-        //Compara si valor del input login es igual al valor del localStorage, ademas guarda el nombre que ingreso el usuario y redirige a la pestaña de index
-        if (usuarioRegistrado.correo === correoLogin && usuarioRegistrado.contra === contraLogin) {
+        // obtenemos los usuarios guardados en el localStorage
+        const usuariosGuardados = localStorage.getItem("usuariosRegistrados");
+
+        // Creamos un array vacío para los usuarios
+        let usuarios = [];
+
+        // Si encontramos algo en el localStorage, lo convertimos de nuevo en un array
+        if (usuariosGuardados) {
+            usuarios = JSON.parse(usuariosGuardados);
+        }
+
+
+        // Recorremos todos los usuarios guardados
+        let usuarioEncontrado = null; // Variable para almacenar el usuario encontrado
+        for (let i = 0; i < usuarios.length; i++) {
+            if (usuarios[i].correo === correoLogin && usuarios[i].contra === contraLogin) {
+                usuarioEncontrado = usuarios[i]; // Guardamos el usuario encontrado
+                break; // Salimos del bucle porque ya encontramos el usuario
+            }
+        }
+        
+        // Si no encontramos al usuario después de recorrer todos los usuarios
+        if (!usuarioEncontrado) {
+            alert("¡Oops! 😅 Parece que el correo o la contraseña no coinciden. Intenta de nuevo");
+        }
+        // Si encontramos al usuario:
+        if (usuarioEncontrado) {
+            // colocaremos que la sesion esta activa
             localStorage.setItem("sesionActiva", "true");
-            localStorage.setItem("nombreUsuario", usuarioRegistrado.nombre);
+
+            // Guardamos el nombre del usuario
+            localStorage.setItem("nombreUsuario", usuarioEncontrado.nombre);
+
+            // Redirigimos a la página principal
             window.location.href = "index.html";
-        } else {
-            alert("¡Oops! 😅 Parece que el correo o la contraseña no coinciden. Intentalo de nuevo");
+
         }
     });
-
 });
-

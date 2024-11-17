@@ -1,90 +1,64 @@
 //mover elementos carrusel
 document.addEventListener('DOMContentLoaded', function () {
-    const botonIzquierda2 = document.querySelector(".botonIzquierda2"),
-        botonDerecha2 = document.querySelector(".botonDerecha2"),
-        slider2 = document.querySelector("#slider2"),
-        carruselSection2 = document.querySelectorAll(".carruselSection2");
+     // Conseguir los botones y las imágenes
+     const botonIzquierda2 = document.querySelector(".botonIzquierda2");
+     const botonDerecha2 = document.querySelector(".botonDerecha2");
+     const slider2 = document.getElementById("slider2");
+     const carruselSection2 = document.querySelectorAll(".carruselSection2");
 
-
-
-
-    let operacion = 0;
-    let anchoImagen = 100 / carruselSection2.length; // calcular el ancho de cada imagen para que se vea cada una de las imagenes
-    let posicion = 0;
-
-    //Funcion para mover a la derecha
-    botonDerecha2.addEventListener("click", function () {
-
-        // Detecta pantalla pequeña
-        if (window.innerWidth <= 480) {
-            //si estamos en la ultima imagen y volvemos a dar click hacia la derecha nos devolvera a la primera imagen
-            if (posicion >= carruselSection2.length - 1) {
-                operacion = 0;
-                posicion = 0;
-                slider2.style.transform = `translate(-${operacion}%)`;
-
-             //la posicion se aumentera de 1 en 1, a la operacion se le suma el ancho de cada imagen para que se muestre una por una al dar click, mientras la posicion sea menor el total de las imagenes
-            } else {
-                posicion++;
-                operacion = operacion + anchoImagen;
-                slider2.style.transform = `translate(-${operacion}%)`;
-                slider2.style.transition = "all ease .6s";
-            }
-        }
-        // Detecta pantallas grandes
-        else
-            //si estamos en la ultima imagen y volvemos a dar click hacia la derecha nos devolvera a la primera imagen
-            if (posicion >= carruselSection2.length - 2) {
-                operacion = 0;
-                posicion = 0;
-                slider2.style.transform = `translate(-${operacion}%)`;
-                //la posicion se aumentera de 1 en 1, a la operacion se le suma el ancho de cada imagen para que se muestre una por una al dar click, mientras la posicion sea menor al total de las imagenes
-            } else {
-                posicion++;
-                operacion = operacion + anchoImagen;
-                slider2.style.transform = `translate(-${operacion}%)`;
-                slider2.style.transition = "all ease .6s";
-            }
-    });
-
-
-    
-    botonIzquierda2.addEventListener("click", function () {
-        // Pantallas pequeñas 
-        if (window.innerWidth <= 480) {
-            posicion--;
-            //si estamos en la primera imagen y volvemos a dar click hacia la izquierda nos devolvera a la ultima imagen
-            if (posicion < 0) {
-                posicion = carruselSection2.length - 1; //posicion tiene el valor de la ultima imagen 
-                operacion = anchoImagen * (carruselSection2.length - 1); //operacion calcula cual es el porcentaje al que equivale esa ultima imagen para despues desplazarlo hasta haya
-                slider2.style.transform = `translate(-${operacion}%)`;
-
-                 //calcula a que porcetaje se debe desplazar 
-            } else {
-                operacion = anchoImagen * posicion;
-                slider2.style.transform = `translate(-${operacion}%)`;
-                slider2.style.transition = "all ease .6s";
-            }
-        }
-
-          // Pantallas más grandes
-          else {
-            posicion--;
-            //si estamos en la primera imagen y damo click a la izquierda nos manda a la ultima imagen
-            if (posicion < 0) {
-                posicion = carruselSection2.length - 2;
-                operacion = anchoImagen * (carruselSection2.length - 2);
-                slider2.style.transform = `translate(-${operacion}%)`;
-
-                //calcula a que porcetaje se debe desplazar 
-            } else {
-                operacion = anchoImagen * posicion;
-                slider2.style.transform = `translate(-${operacion}%)`;
-                slider2.style.transition = "all ease .6s";
-            }
-        }
-    });
-});
+ 
+     let posicion = 0; // Empezamos en el índice 0
+     let anchoImagen = 100 / carruselSection2.length; // Porcentaje de cada imagen
+ 
+     // Función para mostrar las imágenes 
+     function mostrarImagen(index) {
+         // Movemos el contenedor  de imágenes horizontalmente a la posición correcta
+         slider2.style.transform = `translateX(-${index * anchoImagen}%)`;
+     }
+ 
+     // Función para ir hacia la izquierda
+     botonIzquierda2.addEventListener('click', () => {
+         // Reducir la posición
+         posicion--;
+         if (window.innerWidth <= 480) {
+             // Si estamos en la primera imagen (índice 0), ir a la última imagen
+             if (posicion < 0) {
+                 posicion = carruselSection2.length - 1; // Volver al final
+             }
+         } else {
+             // Si estamos en la última imagen, ir a la primera
+             if (posicion < 0) {
+                 posicion = carruselSection2.length - 2;
+             }
+         }
+ 
+         slider2.style.transition = "all ease .6s";
+         // Mostrar la imagen 
+         mostrarImagen(posicion);
+         actualizarIndicadores(posicion);
+     });
+ 
+     // Función para ir hacia la derecha
+     botonDerecha2.addEventListener('click', () => {
+         // Aumentar la posición
+         posicion++;
+ 
+         if (window.innerWidth <= 480) {
+             // Si estamos en la última imagen, ir a la primera
+             if (posicion >= carruselSection2.length) {
+                 posicion = 0; // Volver al principio
+             }
+         } else {
+             // Si estamos en la última imagen, ir a la primera
+             if (posicion >= carruselSection2.length - 1) {
+                 posicion = 0; // Volver al principio
+             }
+         }
+         slider2.style.transition = "all ease .6s";
+         // Mostrar la diapositiva correspondiente
+         mostrarImagen(posicion);
+         actualizarIndicadores(posicion);
+     });
 
 //mostrar elementos carrusel
 
@@ -238,3 +212,39 @@ Repolarizacion.addEventListener('click', function () {
     }, 280);
 
 });
+  /*Indicadores de puntos*/
+
+  const indicadoresTcapilares = document.getElementById("indicadoresTcapilares");
+  const slides = slider2.querySelectorAll(".carruselSection2");
+
+  let totalSlides;
+  let i;
+
+  if (window.innerWidth <= 480) {
+      totalSlides = slides.length;
+  } else {
+      totalSlides = slides.length - 1;
+  }
+
+  //se crea un elemento span con clase punto y se le agrega como hijo al contenedor indicadoresTcapilares, que es el div con id indicadoresTcapilares
+  for (i = 0; i < totalSlides; i++) {
+      const indicador = document.createElement("span");
+      indicador.classList.add("punto");
+      if (i === 0) indicador.classList.add("active");
+      indicadoresTcapilares.appendChild(indicador);
+  }
+
+  //recorrera los elementos span que tienen clase punto y al punto en el que este actualmente se le agregara la clase active y a los que no esten seleccionados actualemnte se les quitara la clase
+  function actualizarIndicadores(indiceActual) {
+      const puntos = indicadoresTcapilares.querySelectorAll(".punto");
+      puntos.forEach((punto, i) => {
+          if (i === indiceActual) {
+              punto.classList.add("active");
+          } else {
+              punto.classList.remove("active");
+          }
+      });
+  }
+
+});
+

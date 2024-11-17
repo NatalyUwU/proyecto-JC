@@ -99,7 +99,31 @@
     width: 17rem;
 }
 
+/*puntos indicador*/
+.carruselIndicadores2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 999;
+    margin-left: 45%;
+    gap: 2rem;
+    top: 52rem;
+}
 
+.carruselIndicadores2 .punto {
+    width: 1rem;
+    height: 1rem;
+    background-color: #f6c7ca;
+    border-radius: 50%;
+    border: 2px #f5a1ac solid;
+    cursor: pointer;
+}
+
+.carruselIndicadores2 .punto.active {
+    background-color: #e5808e;
+}
 /*pie pagina*/
 .piePagina {
     margin-top: 0rem;
@@ -138,5 +162,16 @@
     }
     .carruseles2 {
         width: 600%;
+    }
+
+    /*puntos indicador*/
+    .carruselIndicadores2 {
+        margin-left: 29%;
+        top: 43rem;
+    }
+
+    .carruselIndicadores2 .punto {
+        width: 0.8rem;
+        height: 0.8rem;
     }
   }

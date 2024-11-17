@@ -91,7 +91,7 @@
 }
 
 .buttonPiePag {
-    background-color: #feced4;
+    background-color: #f7ced0;
     width: 6rem;
     font-weight: bold;
     cursor: pointer;
@@ -99,11 +99,12 @@
     border-radius: 1rem;
     text-align: center;
     transition: 0.9s ease all;
+    border: 0rem;
 }
 
 
 .buttonPiePag:hover {
-    background-color: #febcc4;
+    background-color: #f7b3bb;
 }
 
 
@@ -111,6 +112,7 @@
     height: 2rem;
     border-radius: 1rem;
     text-align: center;
+    border: 0rem;
 }
 
 .form {
