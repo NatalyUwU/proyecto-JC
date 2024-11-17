@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formularioReseña = document.getElementById("formularioReseña");
 
+    
+    if (localStorage.getItem("sesionActiva") === null) {
+        localStorage.setItem("sesionActiva", "false");
+    }
 
     if (localStorage.getItem("sesionActiva") === "false") {
         // Agregamos el eventListener para evitar que envíen la reseña si no están logueados
