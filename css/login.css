@@ -68,7 +68,6 @@ h1 {
 
 .liston {
     width: 10.5rem;
-    margin-left: 32rem;
     margin-top: 7rem;
 }
 
@@ -88,6 +87,12 @@ h1 {
     background-color: transparent;
     font-size: 75%;
     margin-top: 0.5rem;
+    width: 47rem;
+    height: 3rem;
+}
+
+input:focus {
+    outline: none;  
 }
 
 /*MEDIA QUERIS*/
@@ -153,7 +158,10 @@ h1 {
 
     .inputForm {
         margin-top: 0rem;
+        width: 17rem;
+        height: 4rem;
     }
+    
 
     .elementoForm2 input {
         grid-area: 2 / 1 / 2 / 4;
