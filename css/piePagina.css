@@ -1,8 +1,11 @@
+/*general*/
+
 * {
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
 }
 
+/*pie de pagina*/
 .piePagina {
     background-color: #fdf0ee;
     display: flex;
@@ -74,9 +77,10 @@
     margin-left: 2rem;
 }
 
-.logoPie h3 {
+.logoPie h2 {
     color: #e5808e;
     text-align: center;
+    font-size: 1.3rem;
 }
 
 .ri-separator {
@@ -131,7 +135,7 @@
         margin-left: 0rem;
     }
 
-    .logoPie h3 {
+    .logoPie h2 {
         font-size: 0.8rem;
         width: 6rem;
         margin-left: 1rem;

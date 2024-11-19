@@ -1,6 +1,7 @@
 @import url("nav.css");
 @import url("piePagina.css");
 
+/*general*/
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +11,11 @@
     scroll-behavior: smooth;
    
 }
+
+a{
+    color: black;
+}
+
 /*Fondo*/
 body {
     background-image: url(../image/fondo.jpeg);
@@ -19,9 +25,7 @@ body {
     background-size: cover;
 }
 
-a{
-    color: black;
-}
+/*Servicios faciales*/
 
 .serviciosFaciales{
     display: flex;

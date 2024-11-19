@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUTOCUIDADO</title>
-     <!--==================== Css ====================-->
+    <!--==================== Css ====================-->
     <link rel="stylesheet" href="css/autocuidado.css">
     <!--==================== google fonts ====================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,69 +28,75 @@
 
 <body>
 
-    <!--==================== HEADER ====================-->
-    <header class="header">
-        <div class="logo">
+     <!--==================== HEADER ====================-->
+     <header id="header">
+
+        <nav id="nav">
+
             <a href="index.html" id="rLogo"><img src="image/logoRococoquette.png" alt="logo rococoquette"></a>
-        </div>
-
-        <div>
             <i class="ri-menu-line" id="abrir"></i>
-        </div>
 
-        <nav class="banner" id="nav">
-            <!--Servicios===-->
-            <i class="ri-close-fill" id="cerrar"></i>
 
-            <ul class="lista" id="listaServicios">
-                <a id="despliegueServicios" class="servicios">Servicios</a>
-                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
-                <!--sublista===-->
-                <li><a href="peluqueria.html">Peluqueria</a></li>
-                <li><a href="faciales.html">Faciales</a></li>
+            <ul id="listaMenus">
+                <i class="ri-close-fill" id="cerrar"></i>
+                <!--Servicios===-->
+                <li id="menu" class="lista">
+                    <a id="despliegueServicios" class="menus">Servicios
+                        <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
+                    </a>
+                    <ul id="listasubmenu">
+                        <!--sublista===-->
+                        <li class="submenu"><a href="peluqueria.html">Peluqueria</a></li>
+                        <li class="submenu"><a href="faciales.html">Faciales</a></li>
+                    </ul>
+                </li>
+
+                <!--Autocuidado===-->
+                <li class="lista">
+                    <a href="autocuidado.html" class="menus">Autocuidado
+                        <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
+                    </a>
+                </li>
+
+                <!--sobre la empresa===-->
+                <li class="lista">
+                    <a href="http://127.0.0.1:5500/index.html#contenedorCarrusel1" class="menus">Sobre Nosotros
+                        <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
+                    </a>
+                </li>
+
+                <!--Reseñas===-->
+                <li class="lista">
+                    <a href="http://127.0.0.1:5500/index.html#reseñas" class="menus">Reseñas
+                        <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
+                    </a>
+                </li>
+
+                <!--Contacto===-->
+                <a href="#piePagina"><img src="image/contactame.jpg" class="contactame"
+                        alt="icono para ir a la seccion de contacto"></a>
+                <a href="#piePagina"><img src="image/contactameMovil.png" class="contactameMovil"
+                        alt="icono para ir a la seccion de contacto"></a>
             </ul>
 
-            <!--Autocuidado===-->
-            <ul class="lista" id="listaAutocuidado">
-                <a href="autocuidado.html" id="despliegueAutocuidado">Autocuidado</a>
-                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
-                <!--sublista===-->
-                <li><a href="#">Facial</a></li>
-                <li><a href="#">Capilar </a></li>
-            </ul>
-
-            <!--sobre la empresa===-->
-            <ul class="lista">
-                <a href="http://127.0.0.1:5500/index.html#contenedorCarrusel1">Sobre Nosotros</a>
-                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
-            </ul>
-
-            <!--Reseñas===-->
-            <ul class="lista" id="listaReseñas">
-                <a href="http://127.0.0.1:5500/index.html#reseñas">Reseñas</a>
-                <img src="image/anguloAbajo.png" class="anguloAbajo" alt="angulo abajo">
-            </ul>
-            <!--Contacto===-->
-            <a href="#piePagina"><img src="image/contactame.jpg" class="contactame" alt=""></a>
-            <a href="#piePagina"><img src="image/contactameMovil.png" class="contactameMovil" alt=""></a>
-
-        </nav>
-         <!--mi cuenta===-->
-         <div class="cuenta">
+           <!--mi cuenta===-->
+           <div class="cuenta">
             <img src="image/conejo.png" class="conejoCuenta" alt="imagen conejo">
-            <a href="login.html " target="_blank" class="iniciarSesion" id="loginLink">Iniciar&nbsp;sesión&nbsp;/</a>
+            <a href="login.html " target="_blank" class="iniciarSesion"
+                id="loginLink">Iniciar&nbsp;sesión&nbsp;/</a>
             <a href="registro.html" target="_blank" class="registrarse" id="registroLink">Registrarse</a><br>
             <p id="mensajeBienvenida" class="mensajeBienvenida"></p>
-            <p id="miCuenta" class="miCuenta">Cerrar Sesion</p>
+            <p id="miCuenta">Cerrar Sesion</p>
         </div>
-
+        </nav>
     </header>
 
 
     <!--==================== CONSEJOS ====================-->
     <section class="consejos">
         <div class="dudasConsejos" id="dudasConsejos">
-            <a href="mailto:lauritatelle.03@gmail.com?subject=Pregunta%20sobre%20autocuidado" target="_blank">¿Tienes alguna duda o te gustaría saber más sobre algún
+            <a href="mailto:lauritatelle.03@gmail.com?subject=Pregunta%20sobre%20autocuidado" target="_blank">¿Tienes
+                alguna duda o te gustaría saber más sobre algún
                 tema? <strong>¡Déjanos tu pregunta
                     aquí!</strong></a>
             <img src="image/liston.png" alt="">
@@ -167,7 +173,7 @@
         <div class="piePagHorizontal">
             <div class="logoPie">
                 <a href="index.html"><img src="image/logoRococoquette.png" alt="logo rococoquette"></a>
-                <h3>Porque Cuidarte es un <br>Acto de Amor Propio</h3>
+                <h2>Porque Cuidarte es un <br>Acto de Amor Propio</h2>
             </div>
             <div class="contacto">
                 <h4>CONTACTO</h4>
@@ -189,22 +195,23 @@
                 <h4>ÚNETE</h4>
                 <p>Suscribete para recibir información sobre <br>nuevos productos, servicios y ofertas</p>
                 <form class="form" id="formSuscribirse">
-                    <input type="email" placeholder="Ingresa tu correo" class="inputPiePag"  id="correoSuscribirse"  required>
+                    <input type="email" placeholder="Ingresa tu correo" class="inputPiePag" id="correoSuscribirse"
+                        required>
                     <button type="submit" class="buttonPiePag">Suscribirse</button>
-                </form> 
+                </form>
             </div>
         </div>
         <div class="derechos">
             <p>Derechos reservados 2024, Laura Nataly Tellez Beltran</p>
         </div>
     </footer>
-    
+
     <script src="js/dudasConsejo.js"></script>
     <script src="js/menuHamburguesaIndez.js"></script>
     <script src="js/saludarUsuario.js"></script>
     <script src="js/localStorageSuscribirse.js"></script>
     <script src="js/cerrarSesion.js"></script>
-    
+
 
 </body>
 

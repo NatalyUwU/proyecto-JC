@@ -1,24 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   //elementos del menu
-  const nav = document.getElementById("nav");
+  const listaMenus = document.getElementById("listaMenus");
   const abrir = document.getElementById("abrir");
   const cerrar = document.getElementById("cerrar");
 
   //sub menu servicios
   const despliegueServicios = document.getElementById("despliegueServicios");
-  const elementosServicios = document.querySelectorAll('#listaServicios li');
+  const elementosServicios = document.querySelectorAll('#listasubmenu li');
+
 
 
   //abrir y cerrar menu hamburguesa
   abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
+    listaMenus.style.display = 'block';
+    abrir.style.display = 'none';
   });
 
   cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
+    listaMenus.style.display = 'none';
+    abrir.style.display = 'block';
   });
-
 
   //despliegue submenu servicios
   //Apenas se despliebe el menu hamburguesa los submenus estaran ocultos

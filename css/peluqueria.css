@@ -5,7 +5,7 @@
 @import url("sliderCepillados.css");
 
 
-
+/*general*/
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +15,11 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
 /*PRIMERA SECCION*/
 .serviciosPeluqueria {
     background-image: url(../image/fondoServicios.png);
@@ -22,11 +27,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-}
-
-a {
-    text-decoration: none;
-    text-align: center;
 }
 
 .serviciosPeluqueria {
@@ -62,6 +62,7 @@ a {
     font-family: "Nunito", sans-serif;
 }
 
+/*SEGUNDA SECCION*/
 .contenedorTcapilare {
     height: 15rem;
     margin-top: 3rem;
@@ -85,6 +86,7 @@ a {
     align-items: center;
 }
 
+/*TERCERA SECCION*/
 .cepillado {
     display: flex;
     justify-content: center;
@@ -109,6 +111,13 @@ a {
 
     }
 
+    
+    a {
+        display: flex;
+        align-items: center;
+    }
+
+    /*PRIMERA SECCION*/
     .peluqueria {
         margin-top: 5rem;
         font-size: 1.8rem;
@@ -125,11 +134,8 @@ a {
         padding-left: 1rem;
     }
 
-    a {
-        display: flex;
-        align-items: center;
-    }
 
+    /*SEGUNDA SECCION*/
     .Tcapilares {
         padding-top: 1rem;
         padding-bottom: 0rem;
@@ -143,6 +149,8 @@ a {
         margin-top: 0.5rem;
         
     }
+
+    /*TERCERA SECCION*/
     .cepillado{
         margin-top: 0.5rem;
     }
