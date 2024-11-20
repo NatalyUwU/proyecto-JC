@@ -163,10 +163,7 @@ a {
 /*Menu movil*/
 
 .ri-menu-line {
-    font-size: 3rem;
-    cursor: pointer;
     display: none;
-    color: #f19cb0;
 }
 
 .ri-close-fill {
@@ -179,13 +176,14 @@ a {
 
     /*menu*/
 
-    #header #nav {
-        margin-left: 0rem;
+    #header{
+        display: flex;
+        justify-content: flex-start;
     }
 
-    #header #rLogo img {
-        height: 5rem;
-        margin-top: 2rem;
+
+    #header #nav {
+        margin-left: 0rem;
     }
 
     .conejoCuenta {
@@ -195,9 +193,9 @@ a {
     .cuenta {
         position: absolute;
         margin-left: 8rem;
-        margin-top: 1.8rem;
         grid-template-columns: 30% 41% 37%;
         grid-template-rows: 30% 20% 30%;
+        margin-top: 2rem;
     }
 
 
@@ -221,13 +219,13 @@ a {
     }
 
 
-    .iniciarSesion {
+    #loginLink {
         grid-area: 2 / 1 / 2 / 2;
         margin-top: 1.5rem;
         margin-left: 0.5rem;
     }
 
-    .registrarse {
+    #registroLink {
         grid-area: 2 / 2 / 2 / 3;
         margin-left: 3.5rem;
         margin-top: 1.5rem;
@@ -240,12 +238,12 @@ a {
     }
 
     .ri-menu-line {
-        display: block;
-        margin-left: 19rem;
-        margin-bottom: 1rem;
-        margin-top: 2.2rem;
+        display: flex;
+        align-items: center;
         font-size: 2.5rem;
-        padding-right: 1.8rem;
+        cursor: pointer;
+        color: #f19cb0;
+       margin-left: 19rem;
 
     }
 
@@ -302,9 +300,19 @@ a {
         margin-top: 1rem;
         margin-left: 9rem;
         z-index: 998;
-       display: none;
+        display: none;
     }
 
+    #header #rLogo img {
+        display: flex;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
 
-
+    #rLogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

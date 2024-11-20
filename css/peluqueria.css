@@ -27,6 +27,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    margin-top: 2rem;
 }
 
 .serviciosPeluqueria {
@@ -112,7 +113,7 @@ a {
     }
 
     
-    a {
+    .serviciosPeluqueria a {
         display: flex;
         align-items: center;
     }
@@ -159,4 +160,6 @@ a {
         margin-left: 0rem;
         padding-left: 1rem;
     }
+
+    
 }

@@ -100,7 +100,7 @@ body {
 @media (max-width: 480px) {
 
     .consejos{
-        padding-top: 5rem;
+        padding-top: 7rem;
     }
 
     .dudasConsejos{
@@ -145,15 +145,6 @@ body {
       font-size: 0.9rem;
     }
 
-    .ri-menu-line {
-        display: block;
-        margin-left: 5rem;
-        margin-bottom: 1rem;
-        margin-top: 0.6rem;
-        font-size: 2.5rem;
-       padding-right: 1.8rem;
-
-    }
     
 }
 

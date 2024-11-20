@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   cerrar.addEventListener("click", () => {
     listaMenus.style.display = 'none';
-    abrir.style.display = 'block';
+    abrir.style.display = 'flex';
   });
 
   //despliegue submenu servicios
