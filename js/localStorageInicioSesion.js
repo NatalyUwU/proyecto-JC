@@ -1,3 +1,4 @@
+//para que mi codigo se ejecute cuando mi html se haya cargado por completo en mi navegador
 document.addEventListener('DOMContentLoaded', function () {
 
     const formularioLogin = document.getElementById("formularioLogin");
@@ -22,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usuariosGuardados) {
             usuarios = JSON.parse(usuariosGuardados);
         }
-
 
         // Recorremos todos los usuarios guardados
         let usuarioEncontrado = null; // Variable para almacenar el usuario encontrado

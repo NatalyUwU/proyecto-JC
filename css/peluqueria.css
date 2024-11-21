@@ -27,7 +27,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    margin-top: 2rem;
 }
 
 .serviciosPeluqueria {
@@ -109,6 +108,7 @@ a {
         background-image: url(../image/fondoServiciosMovil.png);
         padding-left: 3rem;
         padding-right: 4rem;
+        margin-top: 2rem;
 
     }
 

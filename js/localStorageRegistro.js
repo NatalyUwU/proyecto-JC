@@ -1,3 +1,4 @@
+//para que mi codigo se ejecute cuando mi html se haya cargado por completo en mi navegador
 document.addEventListener('DOMContentLoaded', function () {
     const formRegistro = document.getElementById("formularioRegistro");
 
@@ -23,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Obtener los usuarios registrados desde localStorage, o crear un array vacío si es el primer usuario
         let usuarios;
-
+        //traera el valor de la clave usuariosGuardados
         const usuariosGuardados = localStorage.getItem("usuariosRegistrados");
-        
+
         if (usuariosGuardados) {
             // Si hay usuarios guardados traemos el array
             usuarios = JSON.parse(usuariosGuardados);
@@ -34,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
             usuarios = [];
         }
 
-           // Agregamos el nuevo usuario al array
+        // Agregamos el nuevo usuario al array
         usuarios.push(usuario);
 
-         // Guardar el array en el localStorage
-         localStorage.setItem("usuariosRegistrados", JSON.stringify(usuarios));
+        // Guardar el array en el localStorage
+        localStorage.setItem("usuariosRegistrados", JSON.stringify(usuarios));
 
-         // Redirigir a la página de login
-         window.location.href = "login.html";
+        // Redirigir a la página de login
+        window.location.href = "login.html";
     });
 });

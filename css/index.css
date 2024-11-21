@@ -119,19 +119,14 @@ body {
 
 .botonIzquierda {
     left: 30rem;
+    width: 12rem;
 }
 
 .botonDerecha {
     right: 25rem;
+    width: 14rem;
 }
 
-.botonIzquierda img {
-    width: 13rem;
-}
-
-.botonDerecha img {
-    width: 15rem;
-}
 
 /*puntos indicador*/
 .carruselIndicadores {
